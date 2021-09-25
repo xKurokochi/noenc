@@ -212,8 +212,8 @@ Sanksi: *PERMANENT BLOCK*
 Bot gw jalan awokawoak
 Jika sudah dipahami rules-nya, silakan ketik *#menu* untuk memulai!
 
-Owner  BOTZ:
-wa.me/6285608625102
+Owner Renge:
+wa.me/6282327759039
 `
 }
 exports.infoMenu = (prefix) => {
