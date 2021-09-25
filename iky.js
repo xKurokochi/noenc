@@ -995,7 +995,7 @@ case 'sendbug':
                await sleep(1000)
                txtt =`Hai Kak ${pushname}\nItu Ownerku, Mau tau soal apa ya?`
 
-               buttons = [{buttonId: '!sourcecode',buttonText:{displayText: 'SC BOT'},type:1},{buttonId:'!infoig',buttonText:{displayText:'INSTAGRAM'},type:1}]
+               buttons = [{{buttonId:'!infoig',buttonText:{displayText:'INSTAGRAM'},type:1}]
 
                buttonsMessage = {
                contentText: `${txtt}`,
