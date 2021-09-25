@@ -2338,7 +2338,7 @@ case "mode":
                contentText: `${menu}`,
                footerText:  `   
 
- ♥️ LeonGanz`, imageMessage: imageMsg,
+ Renge Bot`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2386,7 +2386,7 @@ case "mode":
                contentText: `${menu}`,
                footerText:  `   
 
-♥️ LeonGanz`, imageMessage: imageMsg,
+Renge Bot`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2437,7 +2437,7 @@ case "mode":
                contentText: `${menu}`,
                footerText:  `   
 
-♥️ LeonGanz`, imageMessage: imageMsg,
+Renge Bot`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2511,7 +2511,7 @@ case "mode":
                footerText:  `   
 
 
-♥️ LeonGanz`, imageMessage: imageMsg,
+Renge Bot`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2588,7 +2588,7 @@ case "mode":
  𝔍𝔞𝔫𝔤𝔞𝔫 𝔭𝔢𝔯𝔫𝔞𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔰𝔢𝔰𝔢𝔬𝔯??𝔫𝔤 
   𝔶𝔞𝔫𝔤 𝔪𝔞𝔰𝔦𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔪𝔞𝔰𝔞𝔩𝔞𝔩𝔲𝔫𝔶𝔞
 
-♥️ LeonGanz`, imageMessage: imageMsg,
+Renge Bot`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2653,7 +2653,7 @@ case "mode":
  𝔍𝔞𝔫𝔤𝔞𝔫 𝔭𝔢𝔯𝔫𝔞𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔰𝔢𝔰𝔢𝔬𝔯𝔞𝔫𝔤 
   𝔶𝔞𝔫𝔤 𝔪𝔞𝔰𝔦𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔪𝔞𝔰𝔞𝔩𝔞𝔩𝔲𝔫𝔶𝔞
 
-♥️ LeonGanz`, imageMessage: imageMsg,
+Renge Bot`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2717,7 +2717,7 @@ case "mode":
  𝔍𝔞𝔫𝔤𝔞𝔫 𝔭𝔢𝔯𝔫𝔞𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔰𝔢𝔰𝔢𝔬𝔯𝔞𝔫𝔤 
   ??𝔞𝔫𝔤 𝔪𝔞𝔰𝔦𝔥 ??𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔪𝔞𝔰𝔞𝔩𝔞𝔩𝔲𝔫𝔶𝔞
 
-♥️ LeonGanz`, imageMessage: imageMsg,
+Renge Bot`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2787,7 +2787,7 @@ case "mode":
  𝔍𝔞??𝔤𝔞𝔫 𝔭𝔢𝔯𝔫𝔞𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔰𝔢𝔰𝔢𝔬𝔯𝔞𝔫𝔤 
   𝔶𝔞𝔫𝔤 𝔪𝔞𝔰??𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔪𝔞𝔰𝔞𝔩𝔞𝔩??𝔫𝔶𝔞
 
-♥️ LeonGanz`, imageMessage: imageMsg,
+Renge Bot`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2855,7 +2855,7 @@ case "mode":
 
  
 
-♥️ LeonGanz`, imageMessage: imageMsg,
+Renge Bot`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2924,7 +2924,7 @@ case "mode":
                footerText:  `   
 
 
-♥️ LeonGanz`, imageMessage: imageMsg,
+Renge Bot`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -2993,7 +2993,7 @@ case "mode":
                headerType: 1
 
   
-♥️ LeonGanz`, imageMessage: imageMsg,
+Renge Bot`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -3070,7 +3070,7 @@ case 'pornmenu':
               
 
   
-♥️ LeonGanz`, imageMessage: imageMsg,
+Renge Bot`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 1
 }
@@ -3240,7 +3240,7 @@ Silahkan pilih tabel di bawah ini , jika tidak support silahkan ketik ! command
   ${ucapanWaktu}
               
 
-♥️ LeonGanz`, imageMessage: imageMsg,
+Renge Bot`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -4222,40 +4222,6 @@ case 'sfire':
 }
               mentions(txt, men, true)
               break
-       case 'belipremium':
-       case 'buypremium':
-       case 'sewabot':
-              gopeynya = 'https://telegra.ph/file/f31a1679501f76109e6f1.jpg'
-            buff = await getBuffer(gopeynya)
-            teksnya = `
-┏━━⬣ PRICE LIST 1
-┃⬡ SEWA 5K/MINGGU
-┃⬡ SEWA 20K/BLN
-┃⬡ SEWA + PREMIUM 15K
-┃⬡ PERMANEN 50K
-┃⬡ PERMANEN + PREM 70K
-┃⬡ ALL PERMANEN 80K
-┗━━⬣
-
-┏━━⬣ PRICE LIST 2
-┃⬡ JADI BOT 20K/BLN
-┃⬡ JADI BOT + OWNER 100K
-┃⬡ SC BOT TANYA OWNER
-┗━━⬣
-
-┏━━⬣ MINAT? PM
-┃⬡ wa.me/6285608625102
-┃⬡ Ig @xkurokochi_
-┃⬡ Yt LeonzGanz
-┗━━⬣
-`
-  buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `OWNER`},type:1},{buttonId: `${prefix}payment`,buttonText:{displayText: `PAYMENT`},type:1}]
-              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
-              contentText: teksnya,buttons,headerType:4}
-              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
-              ikyy.relayWAMessage(prep)
-      break
       
       case 'payment':
       list = await ikyy.prepareMessageFromContent(from, {
@@ -6276,30 +6242,7 @@ teks = `\`\`\`BOT STATISTICS\`\`\`
         case 'tes':
                reply('Okeh nyala')
                break
-        case 'info':  // Jangan Di Ubah Plise
-               urlinfo = 'https://telegra.ph/file/5a8d6bf0339cc120bfb6c.jpg'
-               thankslort = `┌──「 *INFORMATION* 」
-│
-├ *BOT TYPE* : NodeJS
-├ *NAME*  : LeonzGanz
-├ *VERSION* : 1.0
-├ *GITHUB* : Bl4ck-lion
-│
-├─「 *𝙏𝙃𝘼𝙉𝙆𝙎 𝙏𝙊* 」
-│
-├ ALLAH SWT
-├ Nino Chan
-├ Xinz Bot
-├ Manurius
-├ Arif
-├ Fathur
-├ LeonzGanz
-├ Kwn² Yg Bantu Gw
-├ And all creator bot
-│
-└──「 *${botName}* 」`
-             ikyy.sendMessage(from, await getBuffer(urlinfo), image, {quoted: freply, caption: thankslort })
-             break
+
 case 'media':
 if (!q) return reply('Urlnya?')
 reply(mess.wait)
