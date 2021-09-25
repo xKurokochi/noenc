@@ -1214,7 +1214,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
               
                 
 
-                    ikyy.sendMessage(from, { contentText: `${menu}`, footerText: 'Renge Bot', buttons: [{ buttonId: `!command`, buttonText: { displayText: 'LIST MESSAGE' }, type: 1 },{ buttonId: `!sewabot`, buttonText: { displayText: '🏷️ SEWA BOT' }, type: 1 },{ buttonId: `!owner`, buttonText: { displayText: '👥 OWNER' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: ikyads, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+                    ikyy.sendMessage(from, { contentText: `${menu}`, footerText: 'Renge Bot', buttons: [{ buttonId: `!command`, buttonText: { displayText: 'LIST MESSAGE' }, type: 1 },{ buttonId: `!owner`, buttonText: { displayText: '👥 OWNER' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: ikyads, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
               break
 case 'f':
 case 'lock':
