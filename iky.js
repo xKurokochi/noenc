@@ -6561,10 +6561,10 @@ case 'caripesan':  //by ANU TEAM
              break
 //------------------< Menunya Bang:v >-------------------
       case 'infoig':
-             reply(`Jangan Lupa Follow Ig Owner Ya : https://www.instagram.com/kurokochi_/`)
+             reply(`Jangan Lupa Follow Ig Owner Ya : https://www.instagram.com/xkurokochi_/`)
              break
       case 'mygroup':
-             reply('https://chat.whatsapp.com/KMr1UDdgT8NIEi4sghMaUH')
+             reply('Maaf renge gak punya grub kak')
              break
       
       
