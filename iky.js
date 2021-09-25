@@ -2449,6 +2449,7 @@ Renge Bot`, imageMessage: imageMsg,
         
         case 'ownermenu':
         case  'menuowner':
+	      if (!isOwner) return reply(mess.only.owner)
               groups = ikyy.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = ikyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
