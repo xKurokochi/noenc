@@ -2114,7 +2114,7 @@ case "mode":
               if (banChats === true) return
         	  uptime = process.uptime()
         	  banChats = true
-              textImg(`Success mode self gan`)
+              reply(`Success mode self gan`)
               break
                 case 'quotes':
                     quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=IkyAds`)
