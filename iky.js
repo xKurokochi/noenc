@@ -4888,56 +4888,7 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
               buffer = await getBuffer(anu.result)
               ikyy.sendMessage(from, buffer, video, { quoted: freply })
               break
-       case 'nekopoi3d':
-       case '3dnekopoi':
-       case '3dnekopoilast':
-       if (!isPremium) return sendButMessage (from, prem1, prem2, prem3, { quoted: freply})
-              reply(mess.wait)
-              try {
-              bsangee = await axios.get(`https://api.vhtear.com/neko3d&apikey=${setting.vhtearkey}`)
-              bsangee2 = bsangee.data
-              keluarplay = `*List update 3D JAV*\n`
-              for (let i = 0; i < bsangee2.result.length; i++) {
-              keluarplay += `\n═════════════════\n\n*Judul* : ${bsangee2.result[i].title}\n*Deskripsi* : ${bsangee2.result[i].description}\n*Link* : ${bsangee2.result[i].url}\n`
-}
-              reply(keluarplay) 
-              } catch (err) {
-              console.log(err)
-              reply('error!')
-}
-               break
-        case 'nekopoijav':
-        case 'javnekopoi':
-        if (!isPremium) return sendButMessage (from, prem1, prem2, prem3, { quoted: freply})
-               reply(mess.wait)
-               try {
-               bsangce = await axios.get(`https://api.vhtear.com/nekojavlist&apikey=${setting.vhtearkey}`)
-               bsangce2 = bsangce.data
-               keluarplay = `*List update JAV*\n`
-               for (let i = 0; i < bsangce2.result.length; i++) {
-               keluarplay += `\n═════════════════\n\n*Judul* : ${bsangce2.result[i].title}\n*Serial JAV* : ${bsangce2.result[i].seri}\n*Link* : ${bsangce2.result[i].url}\n`
-}
-               reply(keluarplay)
-               } catch (err) {
-               console.log(err)
-}
-               break
-        case 'nekopoicosplay':
-        case 'cosplaynekopoi':
-        if (!isPremium) return sendButMessage (from, prem1, prem2, prem3, { quoted: freply})
-               try {
-               reply(mess.wait)
-               bsangbe = await axios.get(`https://api.vhtear.com/nekojavcosplay&apikey=${setting.vhtearkey}`)
-               bsangbe2 = bsangbe.data
-               keluarplay = `*List update Cosplay JAV*\n`
-               for (let i = 0; i < bsangbe2.result.length; i++) {
-               keluarplay += `\n═════════════════\n\n*Judul* : ${bsangbe2.result[i].title}\n*Deskripsi* : ${bsangbe2.result[i].detail}\n*Link* : ${bsangbe2.result[i].url}\n`
-}
-               reply(keluarplay)
-               } catch (err) {
-               console.log(err)
-}
-               break
+
         case 'otakuongoing':              
                o = await onGoing()
                console.log(o)
@@ -6147,20 +6098,7 @@ teks = `\`\`\`BOT STATISTICS\`\`\`
               predea = await axios.get(`https://api.agify.io/?name=${q}`)
               reply(`Nama : ${predea.data.name}\n*Mati Pada Umur :* ${predea.data.age} Tahun.\n\n_Cepet Cepet Tobat Bro Soalnya Mati ga ada yang tau_`)
               break
-       case 'togel':
-              reply(mess.wait)
-              try {
-              dataplai = await axios.get(`https://api.vhtear.com/togel&apikey=${setting.vhtearkey}`)
-              dataplay = dataplai.data.result
-              let tomgel = `*Huzzzzz*\n`
-              for (let i = 0; i < dataplay.hasil.length; i++) {
-              tomgel += `\n═════════════════\n\n*Negara* : ${dataplay.hasil[i].Negara}\n*Result* : ${dataplay.hasil[i].Senin}\n*Result* : ${dataplay.hasil[i].Selasa}\n*Result* : ${dataplay.hasil[i].Rabu}\n*Result* : ${dataplay.hasil[i].Kamis}\n*Result* : ${dataplay.hasil[i].Jumat}\n*Result* : ${dataplay.hasil[i].Sabtu}\n*Result* : ${dataplay.hasil[i].Minggu}\n`
-}
-              sendText(from, tomgel)
-              } catch (err) {
-              console.log(err)
-}
-              break
+		
        case 'toxic':
               Toxic().then(toxic => {
               reply (toxic)
