@@ -901,7 +901,7 @@ const isVideo = (type === 'videoMessage')
 			let Levelnye = level.getLevelingLevel(sender, _level)
               let Xpluu = level.getLevelingXp(sender, _level)
               let requiredXplu = 10 * Math.pow(Levelnye, 2) + 50 * Levelnye + 100
-			tc = `MAAF KA NOMER KAMU BLOM TERDAFTAR DI DATABASE SILAHKAN KETIK !verify UNTUK MENDAFTAR DI Yui BOTZ`
+			tc = `MAAF KA NOMER KAMU BLOM TERDAFTAR DI DATABASE SILAHKAN KETIK !verify UNTUK MENDAFTAR DI RENGE BOT`
 			ind = {
 				wait: `⌛ Sedang di Prosess ⌛`,
 				success: `✔️ Berhasil ✔️`,
@@ -4074,7 +4074,7 @@ const serialUser = createSerial(18)
 *🌹 Serial:* ${serialUser}
 *🌹 Total:* ${_registered.length} Pengguna
 
-*「 YUIBOTZ 」*`
+*「 Renge Bot 」*`
          ikyads = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
              buttons = [{buttonId: `!menu`,buttonText:{displayText: `🏷️MENU`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(ikyads, "imageMessage", { thumbnail: ikyads, })).imageMessage
@@ -4086,7 +4086,7 @@ const serialUser = createSerial(18)
 	    // console.log(e)
             setTimeout( () => {
 			ikyy.updatePresence(from, Presence.composing)
-			reply(`*Terimakasih Telah Terdaftar Di Yui Botz *`)
+			reply(`*Terimakasih Telah Terdaftar Di Renge Bot *`)
 		}, 2000)
         break
 case 'sfire':
@@ -5783,11 +5783,6 @@ break
        case 'donate': 
        case 'donasi':
               textImg(setting.txtDonasi)
-              break
-       case 'sourcecode': 
-       case 'sc': 
-       case 'src':
-              textImg(`Bot ini menggunakan sc : YUI BOTZ`)
               break
       case 'ping':
       case 'speed':
