@@ -610,8 +610,8 @@ const isImage = (type === 'imageMessage')
             role = 'Immortal'
         } 
         ////DAFTAR BUTTON BY IKY
-      const daftar1 = `Hai kak  ${pushname} ${ucapanWaktu} \n\nSebelum Menggunakan Yui Botz Verify Terlebih Dahulu Ya `
-       const daftar2 = '```Ketik Tombol Di Bawah Untuk Verify Kak\nLeonzGanz```'
+      const daftar1 = `Hai kak  ${pushname} ${ucapanWaktu} \n\nSebelum Menggunakan Renge Bot Verify Terlebih Dahulu Ya `
+       const daftar2 = '```Ketik Tombol Di Bawah Untuk Verify Kak\nRenge```'
        const daftar3 = [
           {
             buttonId: `!verify`,
@@ -624,7 +624,7 @@ const isImage = (type === 'imageMessage')
           
           
       const prem1 = `Hai kak  ${pushname} ${ucapanWaktu} \n\n Fitur Ini Khusus Member Premium Silahkan Buy Premium Untuk Menggunakan Fitur Ini `
-       const prem2 = '```KLIK TOMBOL DI BAWAH UNTUK MELIHAT LIST PREMIUM\n LeonGanz```'
+       const prem2 = '```KLIK TOMBOL DI BAWAH UNTUK MELIHAT LIST PREMIUM\n Renge```'
        const prem3 = [
           {
             buttonId: `!sewabot`,
@@ -1214,7 +1214,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
               
                 
 
-                    ikyy.sendMessage(from, { contentText: `${menu}`, footerText: 'leonz gans', buttons: [{ buttonId: `!command`, buttonText: { displayText: 'LIST MESSAGE' }, type: 1 },{ buttonId: `!sewabot`, buttonText: { displayText: '🏷️ SEWA BOT' }, type: 1 },{ buttonId: `!owner`, buttonText: { displayText: '👥 OWNER' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: ikyads, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+                    ikyy.sendMessage(from, { contentText: `${menu}`, footerText: 'Renge Bot', buttons: [{ buttonId: `!command`, buttonText: { displayText: 'LIST MESSAGE' }, type: 1 },{ buttonId: `!sewabot`, buttonText: { displayText: '🏷️ SEWA BOT' }, type: 1 },{ buttonId: `!owner`, buttonText: { displayText: '👥 OWNER' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: ikyads, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
               break
 case 'f':
 case 'lock':
@@ -1305,7 +1305,7 @@ wibu = `
 ┃▹ ${prefix}steel3d text1 text2
 ┃▹ ${prefix}wallgravity text1 text2
 ┗━▹ `
-sendButMessage(from, wibu, `created leonz`, [
+sendButMessage(from, wibu, `Renge Bot`, [
           {
             buttonId: `!menu`,
             buttonText: {
@@ -1355,7 +1355,7 @@ wibu = `
 ┃▹ hentai4everyone
 ┗━▹
 `
-                   sendButMessage(from, wibu, `created leonz`, [
+                   sendButMessage(from, wibu, `Renge Bot`, [
           {
             buttonId: `!menu`,
             buttonText: {
@@ -1416,7 +1416,7 @@ wibu = `
 ┃▹ random_hentai_gif
 ┗━▹
 `
-                   sendButMessage(from, wibu, `created leonz`, [
+                   sendButMessage(from, wibu, `Renge Bot`, [
           {
             buttonId: `!menu`,
             buttonText: {
@@ -1461,7 +1461,7 @@ wibu = `
 ┃▹ pubg text1 text2
 ┗━▹
 `
-                   sendButMessage(from, wibu, `created leonz`, [
+                   sendButMessage(from, wibu, `Renge Bot`, [
           {
             buttonId: `!menu`,
             buttonText: {
@@ -1496,10 +1496,10 @@ wibu = `
 					case 'darkjoke': 
 				
 				buff = await getBuffer(`http://lolhuman.herokuapp.com/api/meme/darkjoke?apikey=IkyAds`, {method: 'get'})
-				buttons = [{buttonId: `!infoig`,buttonText:{displayText: ` Follow @leonvx._`},type:1}]
+				buttons = [{buttonId: `!infoig`,buttonText:{displayText: ` Follow @xkurokochi_`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by LeonzGanz', imageMessage: imageMsg,
-              contentText:`Follow @leonvx._`,buttons,headerType:4}
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
+              contentText:`Follow @xkurokochi_`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
 break
@@ -1540,7 +1540,7 @@ wibu = `
 ┃▹ freefire text
 ┗━▹
 `
-                   sendButMessage(from, wibu, `created leonz`, [
+                   sendButMessage(from, wibu, `Renge Bot`, [
           {
             buttonId: `!menu`,
             buttonText: {
@@ -1563,10 +1563,10 @@ wibu = `
 					break
 					case 'tahta':
 					buff = await getBuffer(`https://leyscoders-api.herokuapp.com/api/harta-tahta?text=${q}&apikey=IkyOgiwara`)
-		      buttons = [{buttonId: `!infoig`,buttonText:{displayText: ` Follow @leonvx._`},type:1}]
+		      buttons = [{buttonId: `!infoig`,buttonText:{displayText: ` Follow @xkurokochi_`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
-              contentText:`Follow @leonvx._`,buttons,headerType:4}
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
+              contentText:`Follow @xkurokochi_`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
 break
@@ -1624,7 +1624,7 @@ wibu = `
 MENU INI BERISI FITUR 18+
 SEBELUM MELANJUTKAN PASTIKAN ANDA BERUMUR 18+
 `
-                   sendButMessage(from, wibu, `created leonz`, [
+                   sendButMessage(from, wibu, `Renge Bot`, [
           {
             buttonId: `!pornmenu`,
             buttonText: {
@@ -1812,8 +1812,8 @@ case 'chiisaihentai':
               buff = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=IkyAds`)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
-              contentText:`Follow @leonvx._`,buttons,headerType:4}
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
+              contentText:`Follow @xkurokochi_`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
        
@@ -1864,8 +1864,8 @@ case 'chiisaihentai':
                buff = await getBuffer(`https://api.lolhuman.xyz/api/random2/${command}?apikey=IkyAds`)
                 buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by LeonzGanz', imageMessage: imageMsg,
-              contentText:`Follow @leonvx._`,buttons,headerType:4}
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
+              contentText:`Follow @xkurokchi_`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
         
@@ -1877,16 +1877,16 @@ case 'ppcouple':
 
 anu = await fetchJson(`https://leyscoders-api.herokuapp.com/api/ppcouple?apikey=IkyOgiwara`)
 						buff1 = await getBuffer(anu.result.male)
-						buttons = [{buttonId: `!infoig`,buttonText:{displayText: `Follow @leonvx._`},type:1}]
+						buttons = [{buttonId: `!infoig`,buttonText:{displayText: `Follow @xkurokochi_`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff1, "imageMessage", { thumbnail: buff1, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`Cowo`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
             buff2 = await getBuffer(anu.result.female)
-              buttons = [{buttonId: `!infoig`,buttonText:{displayText: `Follow @leonvx._`},type:1}]
+              buttons = [{buttonId: `!infoig`,buttonText:{displayText: `Follow @xkurokochi_`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff2, "imageMessage", { thumbnail: buff2, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Renge', imageMessage: imageMsg,
               contentText:`Cewe`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
              setTimeout( async () => {
@@ -1901,7 +1901,7 @@ case 'memek':
 
 buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `NEXT`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
@@ -1946,8 +1946,8 @@ break
                   buff = await getBuffer(`https://api.lolhuman.xyz/api/textprome/${command}?apikey=IkyAds&text=${ini_txt}`)
                  buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
-              contentText:`Follow @leonvx._`,buttons,headerType:4}
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
+              contentText:`Follow @xkurokochi_`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
         
@@ -1969,8 +1969,8 @@ break
                  buff = await getBuffer(`https://api.lolhuman.xyz/api/textprome2/${command}?apikey=IkyAds&text1=${txt1}&text2=${txt2}`)
                           buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
-              contentText:`Follow @leonvx._`,buttons,headerType:4}
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
+              contentText:`Follow @xkurokochi_`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
         
@@ -2007,8 +2007,8 @@ break
                   buff = await getBuffer(`https://api.lolhuman.xyz/api/photooxy1/${command}?apikey=IkyAds&text=${ini_txt}`)
                           buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
-              contentText:`Follow @leonvx._`,buttons,headerType:4}
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
+              contentText:`Follow @xkurokochi_`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
         
@@ -2024,8 +2024,8 @@ break
                 buff = await getBuffer(`https://api.lolhuman.xyz/api/photooxy2/${command}?apikey=IkyAds&text1=${txt1}&text2=${txt2}`)
                           buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
-              contentText:`Follow @leonvx._`,buttons,headerType:4}
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
+              contentText:`Follow @xkurokochi_`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
         
@@ -2068,8 +2068,8 @@ break
              buff = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=IkyAds&text=${ini_txt}`)
                buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
-              contentText:`Follow @leonvx._`,buttons,headerType:4}
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
+              contentText:`Follow @xkurokochi_`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
         
@@ -2142,7 +2142,7 @@ case "mode":
                     buff = await getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=IkyAds`)
                     buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText: ini_txt,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
@@ -2273,7 +2273,7 @@ case "mode":
                     buff = await getBuffer(get_result.thumbnail)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText: ini_txt,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
@@ -4245,13 +4245,13 @@ case 'sfire':
 
 ┏━━⬣ MINAT? PM
 ┃⬡ wa.me/6285608625102
-┃⬡ Ig @leonvx._
+┃⬡ Ig @xkurokochi_
 ┃⬡ Yt LeonzGanz
 ┗━━⬣
 `
   buttons = [{buttonId: `${prefix}owner`,buttonText:{displayText: `OWNER`},type:1},{buttonId: `${prefix}payment`,buttonText:{displayText: `PAYMENT`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by LeonzGanz', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText: teksnya,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
@@ -4697,7 +4697,7 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
               buff = await getBuffer(get_result.coverImage.large)
               buttons = [{buttonId: `!menu`,buttonText:{displayText: `Back To Menu`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText: ini_txt,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
@@ -4835,7 +4835,7 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
               
                buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText: ini_txt,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
@@ -4862,7 +4862,7 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
               buff = await getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=IkyAds`)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
@@ -4968,7 +4968,7 @@ break
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = ( await ikyy.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
@@ -5086,7 +5086,7 @@ break
                     buff = await getBuffer(ini_url)
                     buttons = [{buttonId: `${prefix + command} ${query}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'crated by leonz', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
