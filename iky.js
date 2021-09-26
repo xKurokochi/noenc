@@ -3739,7 +3739,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
                if (args.length < 1) return reply(`Masukkan nama characternya contoh #genshin keqing`)
                if (genshin.includes(arg)) {
                    path = `./random/buildgi/${args[0]}.jpeg`
-                   await ikyy.sendFile(from, path).catch(err => reply(`Terjadi kesalahan!`).then(() => console.log(err)))
+                   await sendFileFromUrl(from, path).catch(err => reply(`Terjadi kesalahan!`).then(() => console.log(err)))
                } else {
                    reply(`Character yang kamu cari tidak tersedia!`)
                     }
