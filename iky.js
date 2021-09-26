@@ -3740,6 +3740,9 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
                if (genshin.includes(arg)) {
                    path = `./random/buildgi/${args[0]}.jpeg`
                    await ikyy.sendMessage(from, path, image, {quoted: freply}).catch(err => reply(`Terjadi kesalahan!`))
+		 } catch (err) {
+       console.error(err)
+}
                } else {
                    reply(`Character yang kamu cari tidak tersedia!`)
                     }
