@@ -123,6 +123,10 @@ let tebaklagu = JSON.parse(fs.readFileSync('./database/tebaklagu.json'))
 let tebaktebakan = JSON.parse(fs.readFileSync('./database/tebaktebakan.json'))
 let family100 = [];
 
+// Converter
+const genshin = fs.readdirSync('./image/buildgi/').map(item => {
+            return item.replace('.jpeg', '')
+        })
 // Sticker Cmd
 const addCmd = (id, command) => {
     const obj = { id: id, chats: command }
@@ -3252,8 +3256,8 @@ Renge Bot`, imageMessage: imageMsg,
                break
    case 'command':
                list = []
-               listmenu = [`groupmenu`,`photoxy`,`ephoto`,`randomimage`,`wibu2`,`storymenu`,`porno`,`randomtext`,`islammenu`,`wibumenu`,`stickermenu`,`ownermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`owner`,`ikyygroup`,`sewabot`]
-               listmenuu = [`Menu Group`,`Photo Oky`,`Ephoto Menu`,`Random Image`,`Nsfw Anime`,`Movie&Story`,`18+ Menu`,`RandomText`,`Islam Menu`,`Wibu Menu`,`Sticker Menu`,`Owner Command`,`Game Menu`,`For Fun Menu`,`Downloader`,`Info Menu`,`Menu Lainnya`,`OwnerBot`,`Official Group`,`Rent this Bot`]
+               listmenu = [`groupmenu`,`photoxy`,`ephoto`,`randomimage`,`wibu2`,`storymenu`,`porno`,`randomtext`,`islammenu`,`wibumenu`,`stickermenu`,`ownermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`owner`]
+               listmenuu = [`Menu Group`,`Photo Oky`,`Ephoto Menu`,`Random Image`,`Nsfw Anime`,`Movie&Story`,`18+ Menu`,`RandomText`,`Islam Menu`,`Wibu Menu`,`Sticker Menu`,`Owner Command`,`Game Menu`,`For Fun Menu`,`Downloader`,`Info Menu`,`Menu Lainnya`,`OwnerBot`]
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
@@ -3731,6 +3735,16 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 }
               gameAdd(sender, glimit)
               break
+	case 'buildgi': 
+               if (args.length < 1) return reply(`Masukkan nama characternya contoh #genshin keqing`)
+               if (genshin.includes(arg)) {
+                   path = `./random/buildgi/${args[0]}.jpeg`
+                   await ikyy.sendImage(from, path).catch(err => reply(`Terjadi kesalahan!`).then(() => console.log(err)))
+               } else {
+                   reply(`Character yang kamu cari tidak tersedia!`)
+                    }
+               break
+		
        case 'kuismath':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (kuismath.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
