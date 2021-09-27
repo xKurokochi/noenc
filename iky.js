@@ -3738,7 +3738,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 	case 'buildgi': 
                if (args.length < 1) return reply(`Masukkan nama characternya contoh #genshin keqing`)
                if (genshin.includes(arg)) {
-                   path = `./random/buildgi/${args[0]}.jpeg`
+                   path = `./random/buildgi/${args[1]}.jpeg`
                    await ikyy.sendMessage(from, path, image, {quoted: freply}).catch(e => {
 	       reply('_[ ! ] Error! Gagal Mengirim Media_')
 	       console.log(e)
