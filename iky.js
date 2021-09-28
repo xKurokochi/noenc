@@ -3935,9 +3935,8 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (susunkata.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://api.xteam.xyz/game/susunkata?APIKEY=58d853d7d9279c8c`)
-              get_res = get_result.result
-              jawaban = get_result.jawaban
-              pertanyaan = get_result.soal
+              jawaban = get_result.result.jawaban
+              pertanyaan = get_result.result.soal
               ikyy.sendMessage(from, '*+* ```Susun Kata```\n\n• *Soal* :'+pertanyaan+'\n• *Waktu :* 30s', text, { quoted: freply}).then(() => {
               susunkata[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/susunkata.json", JSON.stringify(susunkata))
