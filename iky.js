@@ -3917,9 +3917,9 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (susunkata.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/susunkata?apikey=IkyAds`)
-              get_result = get_result.result
-              jawaban = get_result.jawaban
-              pertanyaan = get_result.pertanyaan
+              get_res = get_result.result
+              jawaban = get_res.jawaban
+              pertanyaan = get_res.pertanyaan
               ikyy.sendMessage(from, '*+* ```Susun Kata```\n\n• *Soal* :'+pertanyaan+'\n• *Waktu :* 30s', text, { quoted: freply}).then(() => {
               susunkata[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/susunkata.json", JSON.stringify(susunkata))
