@@ -203,14 +203,10 @@ exports.rulesBot = (prefix) => {
 Sanksi: *WARN/SOFT BLOCK*
 
 2. Jangan telepon bot.
-Sanksi: *SOFT BLOCK*
+Sanksi: *PERMANENT BLOCK*
 
 3. Jangan mengejek bot.
 Sanksi: *PERMANENT BLOCK*
-
-4. Gpp sc gw jelek yg penting 
-Bot gw jalan awokawoak
-Jika sudah dipahami rules-nya, silakan ketik *#menu* untuk memulai!
 
 Owner Renge:
 wa.me/6282327759039
