@@ -3620,7 +3620,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (tebakanime.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebakchara?apikey=IkyAds`)
               ini_image = get_result.result.image
-              jawaban = get_result.result.result.name
+              jawaban = get_result.result.name
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               ini_buffer = await getBuffer(ini_image)
               ikyy.sendMessage(from, ini_buffer, image, { quoted: freply, caption: '*+* ```Tebak Anime```\n\n• *Petunjuk* :'+kisi_kisi+'\n• *Waktu* : 30s' }).then(() => {
