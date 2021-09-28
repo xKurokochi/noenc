@@ -2185,34 +2185,32 @@ case "mode":
                     if (args.length == 0) return reply(`Example: ${prefix + command} Transformer`)
                     query = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/lk21?apikey=IkyAds&query=${query}`)
-                    get_result = get_result.result
-                    ini_txt = `Title : ${get_result.title}\n`
-                    ini_txt += `Link : ${get_result.link}\n`
-                    ini_txt += `Genre : ${get_result.genre}\n`
-                    ini_txt += `Views : ${get_result.views}\n`
-                    ini_txt += `Duration : ${get_result.duration}\n`
-                    ini_txt += `Tahun : ${get_result.tahun}\n`
-                    ini_txt += `Rating : ${get_result.rating}\n`
-                    ini_txt += `Desc : ${get_result.desc}\n`
-                    ini_txt += `Actors : ${get_result.actors.join(", ")}\n`
-                    ini_txt += `Location : ${get_result.location}\n`
-                    ini_txt += `Date Release : ${get_result.date_release}\n`
-                    ini_txt += `Language : ${get_result.Language}\n`
-                    ini_txt += `Link Download : ${get_result.link_dl}`
-                    thumbnail = await getBuffer(get_result.thumbnail)
+                    ini_txt = `Title : ${get_result.result.title}\n`
+                    ini_txt += `Link : ${get_result.result.link}\n`
+                    ini_txt += `Genre : ${get_result.result.genre}\n`
+                    ini_txt += `Views : ${get_result.result.views}\n`
+                    ini_txt += `Duration : ${get_result.result.duration}\n`
+                    ini_txt += `Tahun : ${get_result.result.tahun}\n`
+                    ini_txt += `Rating : ${get_result.result.rating}\n`
+                    ini_txt += `Desc : ${get_result.result.desc}\n`
+                    ini_txt += `Actors : ${get_result.result.actors.join(", ")}\n`
+                    ini_txt += `Location : ${get_result.result.location}\n`
+                    ini_txt += `Date Release : ${get_result.result.date_release}\n`
+                    ini_txt += `Language : ${get_result.result.Language}\n`
+                    ini_txt += `Link Download : ${get_result.result.link_dl}`
+                    thumbnail = await getBuffer(get_result.result.thumbnail)
                     await ikyy.sendMessage(from, thumbnail, image, { quoted: freply, caption: ini_txt })
                     break
                 case 'drakorongoing':
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/drakorongoing?apikey=IkyAds`)
-                    get_result = get_result.result
                     ini_txt = "Ongoing Drakor\n\n"
                     for (var x of get_result) {
-                        ini_txt += `Title : ${x.title}\n`
-                        ini_txt += `Link : ${x.link}\n`
-                        ini_txt += `Thumbnail : ${x.thumbnail}\n`
-                        ini_txt += `Year : ${x.category}\n`
-                        ini_txt += `Total Episode : ${x.total_episode}\n`
-                        ini_txt += `Genre : ${x.genre.join(", ")}\n\n`
+                        ini_txt += `Title : ${get_result.result.title}\n`
+                        ini_txt += `Link : ${get_result.result.link}\n`
+                        ini_txt += `Thumbnail : ${get_result.result.thumbnail}\n`
+                        ini_txt += `Year : ${get_result.result.category}\n`
+                        ini_txt += `Total Episode : ${get_result.result.total_episode}\n`
+                        ini_txt += `Genre : ${get_result.result.genre.join(", ")}\n\n`
                     }
                     reply(ini_txt)
                     break
@@ -2220,43 +2218,40 @@ case "mode":
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://www.wattpad.com/707367860-kumpuLan-quote-tere-liye-tere-liye-quote-quote`)
                     ini_url = args[0]
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/wattpad?apikey=IkyAds&url=${ini_url}`)
-                    get_result = get_result.result
-                    ini_txt = `Title : ${get_result.title}\n`
-                    ini_txt += `Rating : ${get_result.rating}\n`
-                    ini_txt += `Motify date : ${get_result.modifyDate}\n`
-                    ini_txt += `Create date: ${get_result.createDate}\n`
-                    ini_txt += `Word : ${get_result.word}\n`
-                    ini_txt += `Comment : ${get_result.comment}\n`
-                    ini_txt += `Vote : ${get_result.vote}\n`
-                    ini_txt += `Reader : ${get_result.reader}\n`
-                    ini_txt += `Pages : ${get_result.pages}\n`
-                    ini_txt += `Description : ${get_result.desc}\n\n`
-                    ini_txt += `Story : \n${get_result.story}`
-                    thumbnail = await getBuffer(get_result.photo)
+                    ini_txt = `Title : ${get_result.result.title}\n`
+                    ini_txt += `Rating : ${get_result.result.rating}\n`
+                    ini_txt += `Motify date : ${get_result.result.modifyDate}\n`
+                    ini_txt += `Create date: ${get_result.result.createDate}\n`
+                    ini_txt += `Word : ${get_result.result.word}\n`
+                    ini_txt += `Comment : ${get_result.result.comment}\n`
+                    ini_txt += `Vote : ${get_result.result.vote}\n`
+                    ini_txt += `Reader : ${get_result.result.reader}\n`
+                    ini_txt += `Pages : ${get_result.result.pages}\n`
+                    ini_txt += `Description : ${get_result.result.desc}\n\n`
+                    ini_txt += `Story : \n${get_result.result.story}`
+                    thumbnail = await getBuffer(get_result.result.photo)
                     await ikyy.sendMessage(from, thumbnail, image, { quoted: freply, caption: ini_txt })
                     break
                 case 'wattpadsearch':
                     if (args.length == 0) return reply(`Example: ${prefix + command} Tere Liye`)
                     query = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/wattpadsearch?apikey=IkyAds&query=${query}`)
-                    get_result = get_result.result
                     ini_txt = "Wattpad Seach : \n"
                     for (var x of get_result) {
-                        ini_txt += `Title : ${x.title}\n`
-                        ini_txt += `Url : ${x.url}\n`
-                        ini_txt += `Part : ${x.parts}\n`
-                        ini_txt += `Motify date : ${x.modifyDate}\n`
-                        ini_txt += `Create date: ${x.createDate}\n`
-                        ini_txt += `Coment count: ${x.commentCount}\n\n`
+                        ini_txt += `Title : ${get_result.result.title}\n`
+                        ini_txt += `Url : ${get_result.result.url}\n`
+                        ini_txt += `Part : ${get_result.result.parts}\n`
+                        ini_txt += `Motify date : ${get_result.result.modifyDate}\n`
+                        ini_txt += `Create date: ${get_result.result.createDate}\n`
+                        ini_txt += `Coment count: ${get_result.result.commentCount}\n\n`
                     }
                     reply(ini_txt)
                     break
                 case 'cerpen':
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/cerpen?apikey=IkyAds`)
-                    get_result = get_result.result
-                    ini_txt = `Title : ${get_result.title}\n`
-                    ini_txt += `Creator : ${get_result.creator}\n`
-                    ini_txt += `Story :\n${get_result.cerpen}`
+                    ini_txt = `Title : ${get_result.result.title}\n`
+                    ini_txt += `Creator : ${get_result.result.creator}\n`
+                    ini_txt += `Story :\n${get_result.result.cerpen}`
                     titid = ini_txt
                    sendButMessage(from, titid, `Klik Untuk Ke Quotes Selanjutnya`, [
           {
@@ -2270,11 +2265,10 @@ case "mode":
                     break
                 case 'ceritahoror':
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/ceritahoror?apikey=IkyAds`)
-                    get_result = get_result.result
-                    ini_txt = `Title : ${get_result.title}\n`
-                    ini_txt += `Desc : ${get_result.desc}\n`
-                    ini_txt += `Story :\n${get_result.story}\n`
-                    buff = await getBuffer(get_result.thumbnail)
+                    ini_txt = `Title : ${get_result.result.title}\n`
+                    ini_txt += `Desc : ${get_result.result.desc}\n`
+                    ini_txt += `Story :\n${get_result.result.story}\n`
+                    buff = await getBuffer(get_result.result.thumbnail)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
@@ -3646,9 +3640,8 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakanime.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebakchara?apikey=IkyAds`)
-              get_result = get_result.result
-              ini_image = get_result.image
-              jawaban = get_result.name
+              ini_image = get_result.result.image
+              jawaban = get_result.result.name
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               ini_buffer = await getBuffer(ini_image)
               ikyy.sendMessage(from, ini_buffer, image, { quoted: freply, caption: '*+* ```Tebak Anime```\n\n• *Petunjuk* :'+kisi_kisi+'\n• *Waktu* : 30s' }).then(() => {
@@ -3677,9 +3670,8 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaklagu.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
               get_result = await fetchJson(`https://api.xteam.xyz/game/tebaklagu?apikey=${setting.xteamkey}&id=4mFuArYRh3SO8jfffYLSER`)
-              get_result = get_result.result
-              ini_audio = get_result.preview
-              jawaban = get_result.judul
+              ini_audio = get_result.result.preview
+              jawaban = get_result.result.judul
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               ini_buffer = await getBuffer(ini_audio)
               reply('*+* ```Tebak Lagu```\n\n• *Petunjuk* :'+kisi_kisi+'\n• *Waktu* : 30s')
@@ -3709,10 +3701,9 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaktebakan.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://api.xteam.xyz/game/tebaktebakan?APIKEY=${setting.xteamkey}`)
-              get_result = get_result.result
-              jawaban = get_result.jawaban
+              jawaban = get_result.result.jawaban
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
-              pertanyaan = get_result.soal
+              pertanyaan = get_result.result.soal
               ikyy.sendMessage(from, '*+* ```Tebak Tebakan```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               tebaktebakan[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebaktebakan.json", JSON.stringify(tebaktebakan))
@@ -3811,10 +3802,9 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaksiapaaku.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/siapaaku?apikey=IkyAds`)
-              get_result = get_result.result
-              jawaban = get_result.answer
+              jawaban = get_result.result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
-              pertanyaan = get_result.question
+              pertanyaan = get_result.result.question
               ikyy.sendMessage(from, '*+* ```Tebak Siapakah Aku```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               tebaksiapaaku[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebaksiapaaku.json", JSON.stringify(tebaksiapaaku))
@@ -3832,9 +3822,8 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakata.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/kata?apikey=IkyAds`)
-              get_result = get_result.result
-              jawaban = get_result.jawaban
-              pertanyaan = get_result.pertanyaan
+              jawaban = get_result.result.jawaban
+              pertanyaan = get_result.result.pertanyaan
               ikyy.sendMessage(from, '*+* ```Tebak Kata```\n\n• *Soal* :'+pertanyaan+'\n• *Waktu :* 30s', text, { quoted: freply}).then(() => {
               tebakata[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebakata.json", JSON.stringify(tebakata))
@@ -3852,10 +3841,9 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaklirik.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/lirik?apikey=IkyAds`)
-              get_result = get_result.result
-              jawaban = get_result.answer
+              jawaban = get_result.result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
-              pertanyaan = get_result.question
+              pertanyaan = get_result.result.question
               ikyy.sendMessage(from, '*+* ```Tebak Lirik```\n\n• *Soal* :'+pertanyaan+'\n• *Kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               tebaklirik[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebaklirik.json", JSON.stringify(tebaklirik))
@@ -3873,10 +3861,9 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakjenaka.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/jenaka?apikey=IkyAds`)
-              get_result = get_result.result
-              jawaban = get_result.answer
+              jawaban = get_result.result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
-              pertanyaan = get_result.question
+              pertanyaan = get_result.result.question
               ikyy.sendMessage(from, '*+* ```Tebak Jenaka```\n\n• *Soal* :'+pertanyaan+'\n• *Kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               tebakjenaka[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebakjenaka.json", JSON.stringify(tebakjenaka))
@@ -3894,9 +3881,8 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakimia.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/unsurkimia?apikey=IkyAds`)
-              get_result = get_result.result
-              jawaban = get_result.lambang
-              pertanyaan = get_result.nama
+              jawaban = get_result.result.lambang
+              pertanyaan = get_result.result.nama
               ikyy.sendMessage(from, '*+* ```Tebak Kimia```\n\n• *Soal* :'+pertanyaan+'\n• *Waktu :* 30s', text, { quoted: freply}).then(() => {
               tebakimia[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebakimia.json", JSON.stringify(tebakimia))
@@ -3914,10 +3900,9 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakbendera.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/bendera?apikey=IkyAds`)
-              get_result = get_result.result
-              jawaban = get_result.name
+              jawaban = get_result.result.name
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
-              pertanyaan = get_result.flag
+              pertanyaan = get_result.result.flag
               ikyy.sendMessage(from, '*+* ```Tebak Bendera```\n\n• *Bendera* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               tebakbendera[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/tebakbendera.json", JSON.stringify(tebakbendera))
@@ -3954,10 +3939,9 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (asahotak.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/asahotak?apikey=IkyAds`)
-              get_result = get_result.result
-              jawaban = get_result.jawaban
+              jawaban = get_result.result.jawaban
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
-              pertanyaan = get_result.pertanyaan
+              pertanyaan = get_result.result.pertanyaan
               ikyy.sendMessage(from, '*+* ```Asah Otak```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               asahotak[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/asahotak.json", JSON.stringify(asahotak))
@@ -3975,10 +3959,9 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (caklontong.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/caklontong2?apikey=IkyAds`)
-              get_result = get_result.result
-              jawaban = get_result.answer
+              jawaban = get_result.result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
-              pertanyaan = get_result.question
+              pertanyaan = get_result.result.question
               ikyy.sendMessage(from, '*+* ```Caklontong```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               caklontong[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/caklontong.json", JSON.stringify(caklontong))
