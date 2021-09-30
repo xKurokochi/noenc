@@ -1780,16 +1780,10 @@ SEBELUM MELANJUTKAN PASTIKAN ANDA BERUMUR 18+
 		case 'pussy':
 		case 'thighs':
                 reply (mess.wait)
-               buffer = await axios.get(`https://api-alphabot.herokuapp.com/api/nsfw/${command}?apikey=Alphabot`)
-		buffers = buffer.result
-		buff = await getBuffer(buffers)
-              buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
-              imageMsg = await (ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
-              contentText:`Follow @xkurokchi_`,buttons,headerType:4}
-              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
-              ikyy.relayWAMessage(prep)
-                    break
+               anu = await fetchJson(`https://api-alphabot.herokuapp.com/api/nsfw/${command}?apikey=Alphabot`)
+			buff = await getBuffer(anu.result)
+			ikyy.sendMessage(from, buff,{quoted: freply})
+		break
 
 
 case 'ppcp':
