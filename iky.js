@@ -1304,25 +1304,27 @@ case 'wibu2':
 case 'nsfwanime':
 wibu = `
 ┏━▹ MENU
-┃▹ chiisaihentai
-┃▹ trap
-┃▹ blowjob
-┃▹ yaoi
-┃▹ ecchi
-┃▹ hentai
 ┃▹ ahegao
-┃▹ hololewd
-┃▹ sideoppai
-┃▹ animefeets
-┃▹ animebooty
-┃▹ animethighss
-┃▹ hentaiparadise
-┃▹ animearmpits
-┃▹ hentaifemdom
-┃▹ lewdanimegirls
-┃▹ biganimetiddies
-┃▹ animebellybutton
-┃▹ hentai4everyone
+┃▹ ass
+┃▹bdsm
+┃▹blowjob
+┃▹cuckold
+┃▹cum
+┃▹ero
+┃▹femdom
+┃▹foot
+┃▹gangbang
+┃▹glasses
+┃▹hentai
+┃▹jahy
+┃▹glasses
+┃▹masturbation
+┃▹orgy
+┃▹yuri
+┃▹panties
+┃▹nsfwneko
+┃▹pussy
+┃▹thighs
 ┗━▹
 `
                    sendButMessage(from, wibu, `Renge Bot`, [
@@ -1338,52 +1340,32 @@ wibu = `
 case 'randomimage':
 wibu = `
 ┏━▹ MENU
-┃▹ bj
-┃▹ ero
-┃▹ ppcp
-┃▹ cum
-┃▹ feet
-┃▹ yuri
-┃▹ trap
-┃▹ lewd
-┃▹ feed
-┃▹ eron
-┃▹ solo
-┃▹ gasm
-┃▹ poke
-┃▹ anal
-┃▹ holo
-┃▹ tits
-┃▹ kuni
-┃▹ kiss
-┃▹ erok
-┃▹ smug
-┃▹ baka
-┃▹ solog
-┃▹ feetg
-┃▹ lewdk
-┃▹ waifu
-┃▹ pussy
-┃▹ femdom
-┃▹ cuddle
-┃▹ hentai
-┃▹ eroyuri
-┃▹ cum_jpg
-┃▹ blowjob
-┃▹ erofeet
-┃▹ holoero
-┃▹ classic
-┃▹ erokemo
-┃▹ fox_girl
-┃▹ futanari
-┃▹ lewdkemo
-┃▹ wallpaper
-┃▹ pussy_jpg
-┃▹ kemonomimi
-┃▹ nsfw_avatar
-┃▹ 
-┃▹ 
-┃▹ 
+┃▹ ahegao
+┃▹ ass
+┃▹bdsm
+┃▹blowjob
+┃▹cuckold
+┃▹cum
+┃▹ero
+┃▹femdom
+┃▹foot
+┃▹gangbang
+┃▹glasses
+┃▹hentai
+┃▹jahy
+┃▹glasses
+┃▹masturbation
+┃▹orgy
+┃▹yuri
+┃▹panties
+┃▹nsfwneko
+┃▹pussy
+┃▹thighs
+┃▹loli
+┃▹husbu
+┃▹milf
+┃▹cosplay
+┃▹wallml
 ┗━▹
 `
                    sendButMessage(from, wibu, `Renge Bot`, [
@@ -1758,8 +1740,8 @@ SEBELUM MELANJUTKAN PASTIKAN ANDA BERUMUR 18+
 					}
 					break
 		
-                case 'ass':
                 case 'ahegao':
+                case 'ass':
                 case 'bdsm':
                 case 'blowjob':
                 case 'cuckold':
