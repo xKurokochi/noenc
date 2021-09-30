@@ -10,7 +10,7 @@
 	ReconnectMode,
 	ProxyAgent,
 	ChatModification,
-	GroupSettingChange,yuri
+	GroupSettingChange,
 	waChatKey,
 	mentionedJid,
 	processTime,
