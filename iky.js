@@ -5056,9 +5056,8 @@ a += `\`\`\`🐣 Title : ${i.title}\`\`\`
               } catch {
               profilePic = errorImg
 }
-              buffer = await getBuffer(`https://lolhuman.herokuapp.com/api/rank?apikey=IkyAds&img=${profilePic}&background=https://telegra.ph/file/443b6600636aed1d94acd.jpg&username=${encodeURI(pushname)}&level=${userLevel}&ranking=${Number(userRank)}&currxp=${userXp}&xpneed=${requiredXp}`)
               teks = `*「 LEVEL 」*\n\n➸ *Nama :* ${pushname}\n➸ *Xp :* ${userXp} / ${requiredXp}\n➸ *Level :* ${userLevel}\n➸ *Role*: *${role}*\n\n*Note : Kumpulin Xp Jika Ingin Menaikkan Level*`
-              ikyy.sendMessage(from, buffer, image, { caption: teks, quoted: freply})
+              ikyy.sendMessage(from, profilePic, image, { caption: teks, quoted: freply})
               break
        case 'leaderboard': //Cek Leaderboard
        case 'leaderboards':
