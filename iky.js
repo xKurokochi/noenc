@@ -1783,7 +1783,7 @@ SEBELUM MELANJUTKAN PASTIKAN ANDA BERUMUR 18+
                buffer = await axios.get(`https://api-alphabot.herokuapp.com/api/nsfw/${command}?apikey=Alphabot`)
 		buff = await getBuffer(buffer.result)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
-              imageMsg = await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              imageMsg = await (ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`Follow @xkurokchi_`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
