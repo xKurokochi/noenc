@@ -1758,19 +1758,30 @@ SEBELUM MELANJUTKAN PASTIKAN ANDA BERUMUR 18+
 					}
 					break
 		
-                case 'waifu':
-                case 'neko':
-                case 'shinobu':
-                case 'megumin':
-                case 'bully':
-                case 'cuddle':
-                case 'cry':
-                case 'kiss':
-                case 'hug':
-                case 'awoo':
-                case 'lick':
+                case 'ass':
+                case 'ahegao':
+                case 'bdsm':
+                case 'blowjob':
+                case 'cuckold':
+                case 'cum':
+                case 'ero':
+                case 'femdom':
+                case 'foot':
+                case 'gangbang':
+                case 'glasses':
+		case 'hentai':
+		case 'jahy':
+		case 'glasses':
+	        case 'masturbation':
+		case 'orgy':
+		case 'yuri':
+		case 'panties':
+		case 'neko':
+		case 'pussy':
+		case 'thighs':
                 reply (mess.wait)
-               buff = await getBuffer(`https://api-yogipw.herokuapp.com/api/sfw/${command}`)
+               buff = await getBuffer(`https://api-alphabot.herokuapp.com/api/nsfw/${command}?apikey=Alphabot`)
+		buffs = buff.result
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
