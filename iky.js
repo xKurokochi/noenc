@@ -5056,8 +5056,9 @@ a += `\`\`\`🐣 Title : ${i.title}\`\`\`
               } catch {
               profilePic = errorImg
 }
+	      buff = await getBuffer(profilePic)
               teks = `*「 LEVEL 」*\n\n➸ *Nama :* ${pushname}\n➸ *Xp :* ${userXp} / ${requiredXp}\n➸ *Level :* ${userLevel}\n➸ *Role*: *${role}*\n\n*Note : Kumpulin Xp Jika Ingin Menaikkan Level*`
-              ikyy.sendMessage(from, profilePic, image, { caption: teks, quoted: freply})
+              ikyy.sendMessage(from, buff, image, { caption: teks, quoted: freply})
               break
        case 'leaderboard': //Cek Leaderboard
        case 'leaderboards':
