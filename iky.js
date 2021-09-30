@@ -1782,7 +1782,7 @@ SEBELUM MELANJUTKAN PASTIKAN ANDA BERUMUR 18+
                 reply (mess.wait)
                anu = await fetchJson(`https://api-alphabot.herokuapp.com/api/nsfw/${command}?apikey=Alphabot`)
 			buff = await getBuffer(anu.result)
-			ikyy.sendMessage(from, buff,{quoted: freply})
+			sendFileFromUrl (from, buff,{quoted: freply})
 		break
 
 
