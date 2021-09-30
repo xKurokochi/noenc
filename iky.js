@@ -1784,12 +1784,11 @@ SEBELUM MELANJUTKAN PASTIKAN ANDA BERUMUR 18+
 	       buffs = bufffer_.result
 		buff = await getBuffer(buffs)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
-              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              imageMsg = await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`Follow @xkurokchi_`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
-        
                     break
 
 
