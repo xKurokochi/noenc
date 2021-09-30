@@ -1170,15 +1170,13 @@ case 'sendbug':
 ┏━▹ 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐦𝐞𝐧𝐮
 ┗━▹ 𝐢𝐧𝐟𝐨𝐦𝐞𝐧𝐮
 ┏━▹ 𝐨𝐭𝐡𝐞𝐫𝐦𝐞𝐧𝐮
-┗━▹ 18+
+┗━▹ 𝐈𝐦𝐚𝐠𝐞𝐦𝐚𝐧𝐢
 ┏━▹ 𝐫𝐚𝐧𝐝𝐨𝐦𝐭𝐞𝐱𝐭
 ┗━▹ 𝐦𝐨𝐯𝐢𝐞𝐦𝐞𝐧𝐮
 ┏━▹ 𝐫𝐚𝐧𝐝𝐨𝐦𝐢𝐦𝐚𝐠𝐞
 ┗━▹ 𝐞𝐩𝐡𝐨𝐭𝐨
 ┏━▹ 𝐩𝐡𝐨𝐭𝐨𝐤𝐲
 ┗━▹ 𝐭𝐞𝐱𝐭𝐩𝐫𝐨
-┏━▹ 𝐈𝐦𝐚𝐠𝐞𝐦𝐚𝐧𝐢
-┗━▹ 𝐍𝐬𝐟𝐰𝐚𝐧𝐢𝐦𝐞
 
 
  𝔍𝔞𝔫𝔤𝔞𝔫 𝔭𝔢𝔯𝔫𝔞𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔰𝔢𝔰𝔢𝔬𝔯𝔞𝔫𝔤 
@@ -1383,9 +1381,9 @@ wibu = `
 ┃▹ pussy_jpg
 ┃▹ kemonomimi
 ┃▹ nsfw_avatar
-┃▹ ngif
-┃▹ nsfw_neko_gif
-┃▹ random_hentai_gif
+┃▹ 
+┃▹ 
+┃▹ 
 ┗━▹
 `
                    sendButMessage(from, wibu, `Renge Bot`, [
@@ -1759,79 +1757,21 @@ SEBELUM MELANJUTKAN PASTIKAN ANDA BERUMUR 18+
 						reply(`Kirim foto atau reply foto yang sudah dikirim, dengan caption ${prefix}joke`)
 					}
 					break
-case 'chiisaihentai':
-                case 'trap':
-                case 'blowjob':
-                case 'yaoi':
-                case 'ecchi':
-                case 'ahegao':
-                case 'hololewd':
-                case 'sideoppai':
-                case 'animefeets':
-                case 'animebooty':
-                case 'animethighss':
-                case 'hentaiparadise':
-                case 'animearmpits':
-                case 'hentaifemdom':
-                case 'lewdanimegirls':
-                case 'biganimetiddies':
-                case 'animebellybutton':
-                case 'hentai4everyone':
-                reply (mess.wait)
-              buff = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=IkyAds`)
-              buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
-              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
-              contentText:`Follow @xkurokochi_`,buttons,headerType:4}
-              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
-              ikyy.relayWAMessage(prep)
-       
-                    break
-                case 'bj':
-                case 'ero':
-                case 'cum':
-                case 'feet':
-                case 'yuri':
-                case 'trap':
-                case 'lewd':
-                case 'feed':
-                case 'eron':
-                case 'solo':
-                case 'gasm':
-                case 'poke':
-                case 'anal':
-                case 'holo':
-                case 'tits':
-                case 'kuni':
-                case 'kiss':
-                case 'erok':
-                case 'smug':
-                case 'baka':
-                case 'solog':
-                case 'feetg':
-                case 'lewdk':
+		
                 case 'waifu':
-                case 'pussy':
-                case 'femdom':
+                case 'neko':
+                case 'shinobu':
+                case 'megumin':
+                case 'bully':
                 case 'cuddle':
-                case 'hentai':
-                case 'eroyuri':
-                case 'cum_jpg':
-                case 'blowjob':
-                case 'erofeet':
-                case 'holoero':
-                case 'classic':
-                case 'erokemo':
-                case 'fox_girl':
-                case 'futanari':
-                case 'lewdkemo':
-                case 'wallpaper':
-                case 'pussy_jpg':
-                case 'kemonomimi':
-                case 'nsfw_avatar':
+                case 'cry':
+                case 'kiss':
+                case 'hug':
+                case 'awoo':
+                case 'lick':
                 reply (mess.wait)
-               buff = await getBuffer(`https://api.lolhuman.xyz/api/random2/${command}?apikey=IkyAds`)
-                buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
+               buff = await getBuffer(`https://api-yogipw.herokuapp.com/api/sfw/${command}`)
+              buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`Follow @xkurokchi_`,buttons,headerType:4}
