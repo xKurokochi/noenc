@@ -1780,7 +1780,7 @@ SEBELUM MELANJUTKAN PASTIKAN ANDA BERUMUR 18+
 		case 'pussy':
 		case 'thighs':
                 reply (mess.wait)
-              let nsfwom = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
+              let nsfwom = (await axios.get(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/${command}.json`)).data
               let nsfwnya = nsfwom[Math.floor(Math.random() * (nsfwom.length))]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(nsfwnya))
 		      buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
