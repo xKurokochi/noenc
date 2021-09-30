@@ -3937,10 +3937,10 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'caklontong':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (caklontong.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/caklontong2?apikey=IkyAds`)
-              jawaban = get_result.result.answer
+              get_result = await fetchJson(`https://dapuhy-api.herokuapp.com/api/fun/caklontong?apikey=CNIWdZFisVW08Xp`)
+              jawaban = get_result.jawaban
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
-              pertanyaan = get_result.result.question
+              pertanyaan = get_result.soal
               ikyy.sendMessage(from, '*+* ```Caklontong```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               caklontong[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/caklontong.json", JSON.stringify(caklontong))
