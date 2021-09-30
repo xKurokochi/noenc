@@ -1112,14 +1112,6 @@ case 'sendbug':
                }
                 }
                 break
-                   
-       case '!':
-       case '#':
-       case 'z':
-       case '.':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
-       break
-       
      
                 case 'bokep': case 'bkp': case 'randombokep':{
                 if (!isPremium) return reply(mess.OnlyPrem)
@@ -1135,7 +1127,6 @@ case 'sendbug':
       case 'help':
        case 'menu':
        thu = await ikyy.getStatus(`${sender.split('@')[0]}@s.whatsapp.net`, MessageType.text)
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
        groups = ikyy.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = ikyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1242,7 +1233,6 @@ ikyy.sendMessage(from, { "degreesLatitude": '', "degreesLongitude": '', "jpegThu
 break
               
 case 'textpro':
-if (!isRegistered) return reply(ind.only.daftarB)
 wibu = `
 ┏━▹「 Text Pro Me 」
 ┃▹ ${prefix}blackpink text
@@ -1314,7 +1304,6 @@ case 'fitnah':
 					break
 case 'wibu2':
 case 'nsfwanime':
-if (!isRegistered) return reply(ind.only.daftarB)
 wibu = `
 ┏━▹ MENU
 ┃▹ chiisaihentai
@@ -1411,7 +1400,6 @@ wibu = `
         
         case 'photoxy':
 case 'photooky':
-if (!isRegistered) return reply(ind.only.daftarB)
 wibu = `
 ┏━▹ MENU
 ┃▹ shadow text
@@ -1488,7 +1476,6 @@ wibu = `
 break
         case 'ephoto':
 case 'ephotomenu':
-if (!isRegistered) return reply(ind.only.daftarB)
 wibu = `
 ┏━▹「 Ephoto 360 」
 ┃▹ wetglass text
@@ -1570,7 +1557,6 @@ break
 					break
         case 'imagemani':
 case 'imageefek':
-if (!isRegistered) return reply(ind.only.daftarB)
 wibu = `
 ┏━▹ IMAGE MANIPULATION
 ┃▹ ${prefix}darkjoke
