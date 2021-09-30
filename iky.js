@@ -5981,4 +5981,678 @@ teks = `\`\`\`BOT STATISTICS\`\`\`
 })
               break
         case 'citacita':
-              const cita =['http://piyobot.000webhostapp.com/citacita1.mp3','http://piyobot.000webhostapp.com/citacita2.mp3','http://piyobot.000webhostapp.com/citacita3.mp3','http://piyobot.000webhostapp.com/citacita4.mp3','http://piyobot.000webhostapp.com/citacita5.mp3','http://piyobot.000webhostapp.com/citacita6.mp3','http://piyobot.000webhostapp.com/citacita7.mp3','http://piyobot.000webhostapp.com/citacita8.mp3','http://piyobot.000webhostapp.com/citacita9.mp3','http://piyobot.000webhostapp.com/citacita10.mp3','http://piyobot.000webhostapp.com/citacita11.mp3','http://piyobot.000webhostapp.com/citacita12.mp3','http://piyobot.000webhostapp.com/citacita13.mp3','http://piyobot.000webhostapp.com/citacita14.mp3','http://piyobot.000webhostapp.com/citacita15.mp3','http://piyobot.000webhostapp.com/citacita16.mp3','http://piyobot.000webhostapp.com/citacita17.mp3','http://piyobot.000webhostapp.com/citacita18.mp3','http://piyobot.000webhostapp.com/citacita19.mp3','http://piyobot.000webhostapp.com/citacita20.mp3','http://piyobot.000webhostapp.com/citacita21.mp3','http://piyobot.000webhostapp.com/citacita22.mp3','http://piyobot.000webhostapp.com/citacita23.mp3','http:/
+              const cita =['http://piyobot.000webhostapp.com/citacita1.mp3','http://piyobot.000webhostapp.com/citacita2.mp3','http://piyobot.000webhostapp.com/citacita3.mp3','http://piyobot.000webhostapp.com/citacita4.mp3','http://piyobot.000webhostapp.com/citacita5.mp3','http://piyobot.000webhostapp.com/citacita6.mp3','http://piyobot.000webhostapp.com/citacita7.mp3','http://piyobot.000webhostapp.com/citacita8.mp3','http://piyobot.000webhostapp.com/citacita9.mp3','http://piyobot.000webhostapp.com/citacita10.mp3','http://piyobot.000webhostapp.com/citacita11.mp3','http://piyobot.000webhostapp.com/citacita12.mp3','http://piyobot.000webhostapp.com/citacita13.mp3','http://piyobot.000webhostapp.com/citacita14.mp3','http://piyobot.000webhostapp.com/citacita15.mp3','http://piyobot.000webhostapp.com/citacita16.mp3','http://piyobot.000webhostapp.com/citacita17.mp3','http://piyobot.000webhostapp.com/citacita18.mp3','http://piyobot.000webhostapp.com/citacita19.mp3','http://piyobot.000webhostapp.com/citacita20.mp3','http://piyobot.000webhostapp.com/citacita21.mp3','http://piyobot.000webhostapp.com/citacita22.mp3','http://piyobot.000webhostapp.com/citacita23.mp3','http://piyobot.000webhostapp.com/citacita24.mp3','http://piyobot.000webhostapp.com/citacita25.mp3','http://piyobot.000webhostapp.com/citacita26.mp3','http://piyobot.000webhostapp.com/citacita27.mp3','http://piyobot.000webhostapp.com/citacita28.mp3','http://piyobot.000webhostapp.com/citacita29.mp3','http://piyobot.000webhostapp.com/citacita30.mp3','http://piyobot.000webhostapp.com/citacita31.mp3','http://piyobot.000webhostapp.com/citacita32.mp3','http://piyobot.000webhostapp.com/citacita33.mp3','http://piyobot.000webhostapp.com/citacita34.mp3','http://piyobot.000webhostapp.com/citacita35.mp3']
+              const cita3 = cita[Math.floor(Math.random() * cita.length)]
+              cita2 = await getBuffer(cita3)
+              ikyy.sendMessage(from, cita2, audio,{mimetype: 'audio/mp4', ptt:true, quoted: freply})
+              break
+       case 'apakah':
+              apakah = body.slice(1)
+              const apa =['Iya','Tidak','Bisa Jadi','Coba Ulangi']
+              const kah = apa[Math.floor(Math.random() * apa.length)]
+              ikyy.sendMessage(from, '*Pertanyaan :* '+apakah+'\n*Jawaban :* '+ kah, text, { quoted: freply })
+              break
+       case 'rate':
+       case 'nilai':
+              rate = body.slice(1)
+              const ra =['0','4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
+              const te = ra[Math.floor(Math.random() * ra.length)]
+              ikyy.sendMessage(from, '*Pertanyaan :* '+rate+'\n*Jawaban :* '+ te+'%', text, { quoted: freply })
+              break
+      case 'bay':
+      reply('Sayonara buat yang pergi😔\n Semoga amal ibadahnya di terima :)')
+      break
+      case 'selamatdatang':
+      reply('welcome kak jangan lupa patuhi peraturan  grup ya kaka \n Semoga betah👏')
+      break
+       case 'gantengcek':
+       case 'cekganteng':
+              ganteng = body.slice(1)
+              const gan =['10','30','20','40','50','60','70','62','74','83','97','100','29','94','75','82','41','39']
+              const teng = gan[Math.floor(Math.random() * gan.length)]
+              ikyy.sendMessage(from, '*Pertanyaan :* '+ganteng+'\n*Jawaban :* '+ teng+'%', text, { quoted: freply })
+              break
+       case 'cantikcek':
+       case 'cekcantik':
+              cantik = body.slice(1)
+              const can =['10','30','20','40','50','60','70','62','74','83','97','100','29','94','75','82','41','39']
+              const tik = can[Math.floor(Math.random() * can.length)]
+              ikyy.sendMessage(from, '*Pertanyaan :* '+cantik+'\n*Jawaban :* '+ tik+'%', text, { quoted: freply })
+              break
+       case 'cekwatak':
+              var namao = pushname
+              var prfx = await ikyy.getProfilePicture(sender)
+              const watak = ['top deh pokoknya','penyayang','pemurah','Pemarah','Pemaaf','Penurut','Baik','baperan','Baik-Hati','penyabar','UwU','Suka Membantu']
+              const wtk = watak[Math.floor(Math.random() * (watak.length))]
+              const ratenyaasu = ['100%','95%','90%','85%','80%','75%','70%','65%','60%','55%','50%','45%','40%','35%','30%','25%','20%','15%','10%','5%']
+              const akhlak = ratenyaasu[Math.floor(Math.random() * (ratenyaasu.length))]
+              const sifat = ['Penolong','Suka Membantu','Saling Menolong','Perhatian','Ngak Cuek','Romantis','Dermawan','Cool','Peduli Kepada Sesama','Suka Berkata Kasar']
+              const sft = sifat[Math.floor(Math.random() * (sifat.length))]
+              const hobby = ['Memasak','Membantu Atok','Mabar','Nobar','Coli','Colkyy','Sosmedtan','Membantu Orang lain','Nonton Anime','Nonton Drakor','Naik Motor','Nyanyi','Menari','Bertumbuk','Menggambar','Foto fotoan Ga jelas','Maen Game','Berbicara Sendiri']
+              const hby = hobby[Math.floor(Math.random() * (hobby.length))]
+              const kelebihan = ['Soleh dan Soleha','Pintar','Rajin','Teladan']
+              const klbh = kelebihan[Math.floor(Math.random() * (kelebihan.length))]
+              const tipe = ['cool','idaman','Alami','Keren','Ideal','Dia Bamget','normal','elite','epic','Legend']
+              const typo = tipe[Math.floor(Math.random() * (tipe.length))]
+              await reply(`[ INTROGASI SUKSES ]\n\n[Nama]:${namao}\n\n[Watak]:${wtk}\n\n[Akhlak✨]:${akhlak}\n\n[Sifat]:${sft}\n\n[Hobby]:${hby}\n\n[Tipe]:${typo}\n\n[Kelebihan]:${klbh}\n\nNote\n\n_ini hanya main main_`)
+              break
+       case 'hobby':
+              hobby = body.slice(1)
+              const by = hobby[Math.floor(Math.random() * hobby.length)]
+              ikyy.sendMessage(from, 'Pertanyaan : *'+hobby+'*\n\nJawaban : '+ by, text, { quoted: freply })
+              break
+       case 'bisakah':
+              bisakah = body.slice(1)
+              const bisa =['Bisa','Tidak Bisa','Coba Ulangi','MANA GW TAU']
+              const keh = bisa[Math.floor(Math.random() * bisa.length)]
+              ikyy.sendMessage(from, '*Pertanyaan :* '+bisakah+'\n*Jawaban :* '+ keh, text, { quoted: freply })
+              break
+       case 'kapankah':
+              kapankah = body.slice(1)
+              const kapan =['Besok','Lusa','Tadi','4 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Minggu Lagi','2 Minggu Lagi','3 Minggu Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','1 Tahun Lagi','2 Tahun Lagi','3 Tahun Lagi','4 Tahun Lagi','5 Tahun Lagi','6 Tahun Lagi','1 Abad lagi','3 Hari Lagi']
+              const koh = kapan[Math.floor(Math.random() * kapan.length)]
+              ikyy.sendMessage(from, '*Pertanyaan :* '+kapankah+'\n*Jawaban :* '+ koh, text, { quoted: freply })
+              break
+       case 'truth':
+              const trut =['Pernah suka sama siapa aja? berapa lama?','Kalau boleh atau kalau mau, di gc/luar gc siapa yang akan kamu jadikan sahabat?(boleh beda/sma jenis)','apa ketakutan terbesar kamu?','pernah suka sama orang dan merasa orang itu suka sama kamu juga?','Siapa nama mantan pacar teman mu yang pernah kamu sukai diam diam?','pernah gak nyuri uang nyokap atau bokap? Alesanya?','hal yang bikin seneng pas lu lagi sedih apa','pernah cinta bertepuk sebelah tangan? kalo pernah sama siapa? rasanya gimana brou?','pernah jadi selingkuhan orang?','hal yang paling ditakutin','siapa orang yang paling berpengaruh kepada kehidupanmu','hal membanggakan apa yang kamu dapatkan di tahun ini','siapa orang yang bisa membuatmu sange','siapa orang yang pernah buatmu sange','(bgi yg muslim) pernah ga solat seharian?','Siapa yang paling mendekati tipe pasangan idealmu di sini','suka mabar(main bareng)sama siapa?','pernah nolak orang? alasannya kenapa?','Sebutkan kejadian yang bikin kamu sakit hati yang masih di inget','pencapaian yang udah didapet apa aja ditahun ini?','kebiasaan terburuk lo pas di sekolah apa?']
+              const ttrth = trut[Math.floor(Math.random() * trut.length)]
+              truteh = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
+              ikyy.sendMessage(from, truteh, image, { caption: '*Truth*\n\n'+ ttrth, quoted: freply })
+              break
+       case 'dare':
+              const dare =['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu','telfon crush/pacar sekarang dan ss ke pemain','pap ke salah satu anggota grup','Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo','ss recent call whatsapp','drop emot "??💨" setiap ngetik di gc/pc selama 1 hari','kirim voice note bilang can i call u baby?','drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu','pake foto sule sampe 3 hari','ketik pake bahasa daerah 24 jam','ganti nama menjadi "gue anak lucinta luna" selama 5 jam','chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you','prank chat mantan dan bilang " i love u, pgn balikan','record voice baca surah al-kautsar','bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini','sebutkan tipe pacar mu!','snap/post foto pacar/crush','teriak gajelas lalu kirim pake vn kesini','pap mukamu lalu kirim ke salah satu temanmu','kirim fotomu dengan caption, aku anak pungut','teriak pake kata kasar sambil vn trus kirim kesini','teriak " anjimm gabutt anjimmm " di depan rumah mu','ganti nama jadi " BOWO " selama 24 jam','Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
+              const der = dare[Math.floor(Math.random() * dare.length)]
+              buff = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
+              buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
+              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              buttonsMessage = {footerText:'Jangan Lupa Donasi Ya Kak ☕', imageMessage: imageMsg,
+              contentText:'*Dare*\n\n'+ der,buttons,headerType:4}
+              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              ikyy.relayWAMessage(prep)
+               break		
+       case 'jadian':
+              jds = []
+              jdii = groupMembers
+              koss = groupMembers
+              akuu = jdii[Math.floor(Math.random() * jdii.length)]
+              diaa = koss[Math.floor(Math.random() * koss.length)]
+              teks = `Ciee.. yang lagi jadian @${akuu.jid.split('@')[0]}  (♥️ ) @${diaa.jid.split('@')[0]} `
+              jds.push(akuu.jid)
+              jds.push(diaa.jid)
+              mentions(teks, jds, true)
+              break
+       case 'cantik':
+              membr = []
+              const mes = groupMembers
+              const msk = groupMembers
+              const siaps = mes[Math.floor(Math.random() * mes.length)]
+              const sips = pushname[Math.floor(Math.random() * msk.length)]
+              teks = `*Yang Paling Cantik Disini Adalah :* @${siaps.jid.split('@')[0]}`
+              membr.push(siaps.jid)
+              mentions(teks, membr, true)
+              break
+       case 'ganteng':
+              membr = []
+              const nus = groupMembers
+              const msl = groupMembers
+              const siapss = nus[Math.floor(Math.random() * nus.length)]
+              const sipss = pushname[Math.floor(Math.random() * msl.length)]
+              teks = `*Masih Gantengan Owner Gua >//< :* @${siapss.jid.split('@')[0]}`
+              membr.push(siapss.jid)
+              mentions(teks, membr, true)
+              break
+       case 'babi':
+              membr = []
+              const meg = groupMembers
+              const mge = groupMembers
+              const ba = meg[Math.floor(Math.random() * meg.length)]
+              const bi = pushname[Math.floor(Math.random() * mge.length)]
+              teks = `*Yang Paling Babi Disini Adalah :* @${ba.jid.split('@')[0]}`
+              membr.push(ba.jid)
+              mentions(teks, membr, true)
+              break
+       case 'beban':
+              membr = []
+              const nge = groupMembers
+              const tod = groupMembers
+              const beb = nge[Math.floor(Math.random() * nge.length)]
+              const an = pushname[Math.floor(Math.random() * tod.length)]
+              teks = `*Yang Paling Beban Disini Adalah :* @${beb.jid.split('@')[0]}`
+              membr.push(beb.jid)
+              mentions(teks, membr, true)
+              break
+//------------------< Lainnya >-------------------
+        case 'getpp':
+               if (kyy.message.extendedTextMessage === null || kyy.message.extendedTextMessage === undefined) {
+               linkpp = await ikyy.getProfilePicture(from) || "https://telegra.ph/file/40151a65238ba2643152d.jpg"
+               buffer = await getBuffer(linkpp)
+               ikyy.sendMessage(from, buffer, image, {caption: "Nih", quoted: freply })
+               } else if (kyy.message.extendedTextMessage.contextInfo.mentionedJid === null || kyy.message.extendedTextMessage.contextInfo.mentionedJid === undefined) {
+               mberr = kyy.message.extendedTextMessage.contextInfo.participant
+               linkpp = await ikyy.getProfilePicture(mberr) || "https://telegra.ph/file/40151a65238ba2643152d.jpg"
+               buffer = await getBuffer(linkpp)
+               ikyy.sendMessage(from, buffer, image, { quoted: freply, caption: `Profile Picture of @${mberr.split("@")[0]}`, contextInfo: { "mentionedJid": [mberr] }})
+               } else if (kyy.message.extendedTextMessage.contextInfo.mentionedJid.length > 0) {
+               mberr = kyy.message.extendedTextMessage.contextInfo.mentionedJid[0]
+               linkpp = await ikyy.getProfilePicture(mberr) || "https://telegra.ph/file/40151a65238ba2643152d.jpg"
+               buffer = await getBuffer(linkpp)
+               ikyy.sendMessage(from, buffer, image, { quoted: freply, caption: `Profile Picture of @${mberr.split("@")[0]}`, contextInfo: { "mentionedJid": [mberr] }})
+}
+               break
+        case 'd':
+        case 'del':
+        case 'delete': // MR.CYSER
+               try {
+               if (kyy.message.extendedTextMessage === undefined || kyy.message.extendedTextMessage === null) return reply('Reply chat bot')
+               ikyy.deleteMessage(from, {id: kyy.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true})
+               } catch (e){
+               reply('Reply chat bot')
+}
+               break
+        case 'tes':
+               reply('Okeh nyala')
+               break
+        case 'info':  // Jangan Di Ubah Plise
+               urlinfo = 'https://telegra.ph/file/5a8d6bf0339cc120bfb6c.jpg'
+               thankslort = `┌──「 *INFORMATION* 」
+│
+├ *BOT TYPE* : NodeJS
+├ *NAME*  : RengeBot
+├ *VERSION* : 1.5
+│
+├─「 *𝙏𝙃𝘼𝙉𝙆𝙎 𝙏𝙊* 」
+│
+├ ALLAH SWT
+├ Nino Chan
+├ Xinz Bot
+├ Manurius
+├ Arif
+├ Fathur
+├ LeonzGanz
+├ Kwn² Yg Bantu Gw
+├ And all creator bot
+│
+└──「 *${botName}* 」`
+             ikyy.sendMessage(from, await getBuffer(urlinfo), image, {quoted: freply, caption: thankslort })
+             break
+case 'media':
+if (!q) return reply('Urlnya?')
+reply(mess.wait)
+sendMediaURL(from, `${args[0]}`, "").catch(() => reply('Error'))
+break
+      case 'get':
+      case 'fetch': //ambil dari nuru
+             if (!/^https?:\/\//.test(q)) return reply('Awali *URL* dengan http:// atau https://')
+             res = await fetch(q)
+             if (res.headers.get('content-length') > 100 * 1024 * 1024 * 1024) {
+             delete res
+             throw `Content-Length: ${res.headers.get('content-length')}`
+}
+             if (!/text|json/.test(res.headers.get('content-type'))) return sendMediaURL(from, q)
+             txtx = await res.buffer()
+             try {
+             txtx = util.format(JSON.parse(txtx+''))
+             } catch (e) {
+             txtx = txtx + ''
+             } finally {
+             reply(txtx.slice(0, 65536) + '')
+}
+             break
+      case 'searchmsg': 
+case 'caripesan':  //by ANU TEAM
+             if (args.length < 1) return reply(`Pesan Yang Mau Dicari Apaan?\nContoh : ${prefix + command} halo|10`)
+             teks = arg
+             if (teks.includes("|")) { 
+             try {
+             var ve = teks.split("|")[0]
+             var za = teks.split("|")[1]
+             sampai = `${za}`
+             if (isNaN(sampai)) return reply('Harus berupa Angka!')
+             batas = parseInt(sampai) + 1
+             if (batas > 30) return reply('Maks 30!')
+             reply(mess.wait)
+             cok = await ikyy.searchMessages(`${ve}`, from, batas,1) 
+             if (cok.messages.length < 2) return reply('Tidak Ditemukan Pesan') 
+             if (cok.messages.length < parseInt(batas)) reply(`Hanya Ditemukan ${cok.messages.length - 1} Pesan`)
+             for (i=1;i < cok.messages.length;i++) {
+             if (cok.messages[i].message) {
+             ikyy.sendMessage(from, `Ditemukan!`, text, {sendEphemeral: true, quoted: cok.messages[i]}) 
+}
+}
+             } catch (e) {
+             return reply(String(e))
+}
+             } else {
+             reply(`Format salah tod, ini contoh format yang benar : ${prefix + command} halo|10`)
+}
+             break
+       case 'lolkey':
+       case 'cekapikey':
+              if (args.length < 1) return reply(`Ketik ${prefix}lolkey [Apikeynya]`) 
+              anu = await fetchJson(`https://lolhuman.herokuapp.com/api/checkapikey?apikey=${q}`)
+              teks = `*YOUR APIKEY*\n\n➸ Ussername= ${anu.result.username}\n➸ Request= ${anu.result.requests}\n➸ Today= ${anu.result.today}\n➸ Akun Type= ${anu.result.account_type}\n➸ Expired= ${anu.result.expired}\n➸ API = https://lolhuman.herokuapp.com`
+              ikyy.sendMessage(from, teks, text, {quoted: freply})
+              break
+       case 'bugreport':
+              if (args.length < 1) return reply(`Ketik ${prefix}bugreport [fiturnya] [Error Nya Gimana]`) 
+              teks = args.join(' ')
+              reply('Terima Kasih Telah Melaporkan Bug Pada Owner, Jika Itu Sekedar Iseng Maka Akan Di Ban Oleh Bot!')
+              ikyy.sendMessage('6285608625102@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
+              break
+       case 'readall':
+              totalchat.map( async ({ jid }) => {
+              await ikyy.chatRead(jid)
+})
+              reply(`\`\`\`Berhasil membaca ${unread.length} Chat !\`\`\``)
+              console.log(totalchat.length)
+              break	
+
+//------------------< Enable/Disable >-------------------
+       case 'leveling':
+              if (!isGroup) return reply(mess.only.group)
+              if (ar[0] === 'enable') {
+              if (isLevelingOn) return reply('Fitur leveling telah diaktifkan sebelumnya.')
+            _leveling.push(from)
+              fs.writeFileSync('./database/group/leveling.json', JSON.stringify(_leveling))
+              reply('Fitur leveling berhasil diaktifkan.')
+              } else if (ar[0] === 'disable') {
+              var anup = _leveling.indexOf(from)
+            _leveling.splice(anup, 1)
+              fs.writeFileSync('./database/group/leveling.json', JSON.stringify(_leveling))
+              reply('Fitur leveling berhasil dimatikan.')
+              } else {
+              reply('Pilih enable atau disable!')
+}
+              break
+       case 'antilink':
+              if (!isGroup) return reply(mess.only.group)
+              if (!isBotGroupAdmins) return reply(`Bot Harus jadi Admin`)
+              if (!q) return reply(`Pilih enable atau disable`)
+              if (args[0].toLowerCase() === 'enable'){
+              if (isAntiLink) return reply(`Udah aktif`)
+              antilink.push(from)
+              fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
+              reply('*「 ANTILINK DI AKTIFKAN 」*\n\nYang Ngirim Link Group Bakal Ke Kick!')
+              } else if (args[0].toLowerCase() === 'disable'){
+              let anu = antilink.indexOf(from)
+              antilink.splice(anu, 1)
+              fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
+              reply('*「 ANTILINK DI NONAKTIFKAN 」*')
+              } else {
+              reply(`Pilih enable atau disable`)
+}
+              break
+       case 'welcome':
+               if (!isGroup) return reply(mess.only.group)
+               if (args.length < 1) return reply('!welcome enable/disable')
+               if ((args[0]) === 'enable') {
+               if (isWelkom) return reply('Udah aktif')
+               welkom.push(from)
+               fs.writeFileSync('./database/group/welcome.json', JSON.stringify(welkom))
+               reply('Sukses mengaktifkan fitur welcome di group ini ✔️')
+               } else if ((args[0]) === 'disable') {
+               welkom.splice(from, 1)
+               fs.writeFileSync('./database/group/welcome.json', JSON.stringify(welkom))
+               reply('Sukses menonaktifkan fitur welcome di group ini ✔️')
+               } else {
+               reply('Enable untuk mengaktifkan, disable untuk menonaktifkan')
+}
+               break
+        case 'mute':
+               if (!isGroup) return reply(mess.only.group)
+               if (!isGroupAdmins) return reply(mess.only.admin)
+               if (args.length < 1) return reply('!mute enable/disable')
+               if (args[0].toLowerCase() === 'enable'){
+               if (isMuted) return reply(`udah di mute`)
+               mute.push(from)
+               fs.writeFileSync('./database/group/mute.json', JSON.stringify(mute))
+               reply(`*...:* *MUTE ON* *:...*\n\nPerhatian untuk member grup\nBot telah di mute di grup ${groupName} , Silahkan menggunakan bot dengan sewajarnya\n\n_*${botName}*_`)
+               } else if (args[0].toLowerCase() === 'disable'){
+               anu = mute.indexOf(from)
+               mute.splice(anu, 1)
+               fs.writeFileSync('./database/group/mute.json', JSON.stringify(mute))
+               reply(`*...:* *𝙈𝙐𝙏𝙀 𝙊𝙁𝙁* *:...*\n\nPerhatian untuk member grup\nBot telah di unmute di grup ${groupName} , Silahkan menggunakan bot dengan sewajarnya\n\n_*${botName}*_`)
+               } else {
+               reply(`Pilih enable atau disable`)
+}
+               break
+        case 'grupsetting':
+        case 'groupsetting':
+               if (!isGroup) return reply(mess.only.group)
+               if (!isGroupAdmins) return reply(mess.only.admin)
+               list = []
+               com = [`group enable`,`leveling enable`,`welcome enable`,`antilink enable`,`mute enable`]
+               comm = [`group disable`,`leveling disable`,`welcome disable`,`antilink disable`,`mute disable`]
+               listnya = [`Group open/close`,`Leveling enable/disable`,`Welcome enable/disable`,`Antilink enable/disable`,`Mute enable/disable`]
+               suruh = [`Enable`, `Disable`]
+               fiturname = [`Group`,`Leveling`,`Welcome`,`Antilink`,`Mute`]
+               startnum = 0; let startnu = 0; let startn = 0;let start = 0
+               startnumm = 1
+               for (let x of com) {
+               var yy = {title: `${listnya[startnum++]}`,
+                    rows: [
+                       {
+                        title: `${suruh[0]}`,
+                        description: `\nMengaktifkan ${fiturname[startnu++]}`,
+                        rowId: `${prefix}${x}`
+                      },{
+                        title: `${suruh[1]}`,
+                        description: `\nMenonaktifkan ${fiturname[startn++]}`,
+                        rowId: `${prefix}${comm[start++]}`
+                      }
+                    ]
+                   }
+                        list.push(yy)
+           }
+             listmsg(from, `Group Setting`, `Atur Settingan Grup anda disini......`, list)
+             break
+      case 'group':
+      case 'grup':
+             if (!isGroup) return reply(mess.only.group)
+             if (!isGroupAdmins) return reply(mess.only.admin)
+             if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+             if (args.length < 1) return reply('!group enable/disable')
+             if (args[0].toLowerCase() === 'enable'){
+             ikyy.groupSettingChange(from, "announcement", false)
+            .then((res) => reply(jsonformat(res)))
+            .catch((err) => reply(jsonformat(err)))
+             } else if (args[0].toLowerCase() === 'disable'){
+             ikyy.groupSettingChange(from, "announcement", true)
+            .then((res) => reply(jsonformat(res)))
+            .catch((err) => reply(jsonformat(err)))
+             } else if (args[0].toLowerCase() === 'close'){
+             ikyy.groupSettingChange(from, "announcement", true)
+            .then((res) => reply(jsonformat(res)))
+            .catch((err) => reply(jsonformat(err)))
+             } else if (args[0].toLowerCase() === 'open'){
+             ikyy.groupSettingChange(from, "announcement", false)
+            .then((res) => reply(jsonformat(res)))
+            .catch((err) => reply(jsonformat(err)))
+             } else {
+             reply(`Pilih enable atau disable`)
+}
+             break
+//------------------< Menunya Bang:v >-------------------
+      case 'infoig':
+             reply(`Jangan Lupa Follow Ig Owner Ya : https://www.instagram.com/xkurokochi_/`)
+             break
+      case 'mygroup':
+             reply('Timdak ada Grub!')
+             break
+      
+      
+      
+      case 'jadibot':
+             if (!isOwner) return  reply(mess.only.owner)
+             const _0x5f10=['1ubdcbO','202171TkLMwo','284052dVVNCo','42JxCsde','24890OaehfM','./jadibot.js','26826mdmYhJ','176EqLcNV','55194kArISZ','6GRvhmu','314893OwJFDH'];const _0x470b71=_0x5476;function _0x5476(_0x56372d,_0x51b653){return _0x5476=function(_0x5f107a,_0x54761a){_0x5f107a=_0x5f107a-0xd8;let _0x336fbf=_0x5f10[_0x5f107a];return _0x336fbf;},_0x5476(_0x56372d,_0x51b653);}(function(_0x4b0f8a,_0x1f534e){const _0x1acfb6=_0x5476;while(!![]){try{const _0x55ab94=-parseInt(_0x1acfb6(0xdc))+parseInt(_0x1acfb6(0xe2))*parseInt(_0x1acfb6(0xde))+-parseInt(_0x1acfb6(0xe1))*parseInt(_0x1acfb6(0xdb))+parseInt(_0x1acfb6(0xda))+-parseInt(_0x1acfb6(0xdd))+parseInt(_0x1acfb6(0xdf))+parseInt(_0x1acfb6(0xd8))*parseInt(_0x1acfb6(0xd9));if(_0x55ab94===_0x1f534e)break;else _0x4b0f8a['push'](_0x4b0f8a['shift']());}catch(_0x4a8ec9){_0x4b0f8a['push'](_0x4b0f8a['shift']());}}}(_0x5f10,0x285aa));const {jadibot}=require(_0x470b71(0xe0));jadibot(ikyy,from,sender,reply,kyy);
+             break
+      case 'stopjadibot':
+      case 'stopbot':
+             const _0x1427=['2584oRLTbU','3849mFwfyJ','./jadibot.js','71LvrzJG','286372cCrXrQ','1yPMtDu','1AjjlYF','456046PuhVDs','394eRcMph','746574pwCcoE','625699UVPwUh','1029671oWZdcF'];const _0x49a386=_0x39bb;function _0x39bb(_0x399e0b,_0x2d0c73){return _0x39bb=function(_0x1427be,_0x39bbc5){_0x1427be=_0x1427be-0x132;let _0x12e62d=_0x1427[_0x1427be];return _0x12e62d;},_0x39bb(_0x399e0b,_0x2d0c73);}(function(_0x49c476,_0x4d8227){const _0x22a1e5=_0x39bb;while(!![]){try{const _0x311704=parseInt(_0x22a1e5(0x138))*parseInt(_0x22a1e5(0x13c))+parseInt(_0x22a1e5(0x13b))*parseInt(_0x22a1e5(0x136))+-parseInt(_0x22a1e5(0x134))+-parseInt(_0x22a1e5(0x13d))*parseInt(_0x22a1e5(0x133))+parseInt(_0x22a1e5(0x137))+-parseInt(_0x22a1e5(0x139))+-parseInt(_0x22a1e5(0x13a))*parseInt(_0x22a1e5(0x135));if(_0x311704===_0x4d8227)break;else _0x49c476['push'](_0x49c476['shift']());}catch(_0x25e28b){_0x49c476['push'](_0x49c476['shift']());}}}(_0x1427,0x8b9f1));const {stopjadibot}=require(_0x49a386(0x132));stopjadibot(ikyy,from,sender,kyy);
+             break
+default:
+
+if (budy.includes(`assalamualaikum`)) {
+                  reply(`Waalaikumsalam`)
+                  }
+if (budy.includes(`anjing`)) {
+                  reply(`santai jamet`)
+                  }
+                  if (budy.includes(`Iky`)) {
+                  reply(`Auto respon: Iya kenapa manggil ownerku?`)
+                  }
+
+
+		if (budy.includes(`Assalamualaikum`)) {
+                  reply(`Waalaikumsalam`)
+                  }
+                  
+                  if (budy.includes(`syalom`)) {
+                  reply(`waalaikumsalam`)
+                  }
+                  
+if (budy.includes("Numa")){
+
+		ikyy.updatePresence(from, Presence.composing)
+
+		const loli = fs.readFileSync('./assets/numa')
+
+        ikyy.sendMessage(from, loli, MessageType.audio, {quoted: freply, mimetype: 'audio/mp4', ptt:true})
+
+        const d = fs.readFileSync('./sticker/jget.webp');
+
+        ikyy.sendMessage(from, d, sticker, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "song : dj numa numa yei", 'jpegThumbnail': fs.readFileSync('./sticker/dnsnew.webp')}}}})
+
+        }
+        if (budy.includes("#m")){
+if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
+}
+if (budy.includes("!m")){
+if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
+}
+        if (budy.includes("#a")){
+if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
+}
+if (budy.includes("!a")){
+if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
+}
+        if (budy.includes("#s")){
+if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
+}
+if (budy.includes("!s")){
+if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
+}
+if (budy.includes("bot")){
+if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
+}
+if (budy.includes("Bot")){
+if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
+}
+
+
+
+if (fs.existsSync(`./media/${from}.json`)) {
+	gelutSkuy = setGelud(`${from}`)
+	if (sender == `${gelutSkuy.Y}@s.whatsapp.net` && budy.toLowerCase() == 'y') {
+		if (gelutSkuy.status) return reply(`Game telah dimulai sebelumnya!`)
+		gelutSkuy.status = true
+		rand0m = [ gelutSkuy.Z, gelutSkuy.Y ]
+		winR = rand0m[Math.floor(Math.random() * rand0m.length)]
+		fs.writeFileSync(`./media/${from}.json`, JSON.stringify(gelutSkuy, null, 2))
+		starGame = `👑 Gelud Game 🤙🏻 
+Diantara @${gelutSkuy.Z} & @${gelutSkuy.Y}
+• Pemenangnya adalah [ @${winR} ] `
+	   ikyy.sendMessage(from, starGame, text, {quoted: freply, contextInfo: { mentionedJid: [winR + "@s.whatsapp.net", gelutSkuy.Z + "@s.whatsapp.net", gelutSkuy.Y + "@s.whatsapp.net",]}})
+		fs.unlinkSync("./media/" + from + ".json");
+	} else if (sender == `${gelutSkuy.Y}@s.whatsapp.net` &&  budy.toLowerCase() == 'n') {
+		ikyy.sendMessage(from, `👑 Game Gelud Rejected 🤙🏻
+• @${gelutSkuy.Y} Menolak🤙🏻`, text, {quoted: freply, contextInfo: { mentionedJid: [gelutSkuy.Y + "@s.whatsapp.net"]}})
+		fs.unlinkSync("./media/" + from + ".json");
+	}
+}
+
+if (isTTT && isPlayer2){
+if (budy.startsWith('Y')){
+  tto = ky_ttt.filter(ghg => ghg.id.includes(from))
+  tty = tto[0]
+  angka = tto[0].angka
+  ucapan = 
+`*🎳 Game Tictactoe 🎲*
+Player1 @${tty.player1.split('@')[0]}=❎
+Player2 @${tty.player2.split('@')[0]}=⭕
+Giliran = @${tty.player1.split('@')[0]}
+   ${angka[1]}${angka[2]}${angka[3]}
+   ${angka[4]}${angka[5]}${angka[6]}
+   ${angka[7]}${angka[8]}${angka[9]}`
+  ikyy.sendMessage(from, ucapan, text, {quoted: freply, contextInfo:{mentionedJid: [tty.player1,tty.player2]}})
+  }
+if (budy.startsWith('N')){
+tto = ky_ttt.filter(ghg => ghg.id.includes(from))
+tty = tto[0]
+naa = ky_ttt.filter(toek => !toek.id.includes(from)) 
+ky_ttt = naa
+ikyy.sendMessage(from, `Yahh @${tty.player2.split('@')[0]} Menolak:(`,text,{quoted:kyy,contextInfo:{mentionedJid:[tty.player2]}})
+}
+}
+
+if (isTTT && isPlayer1){
+nuber = parseInt(budy)
+if (isNaN(nuber)) return
+if (nuber < 1 || nuber > 9) return reply('Masukan Angka Dengan Benar')
+main = ky_ttt.filter(hjh => hjh.id.includes(from)) 
+if (!tttawal.includes(main[0].angka[nuber])) return reply('Udah Di Isi, Isi Yang Lain Gan')
+if (main[0].gilir.includes(sender)) return reply('Tunggu Giliran Gan')
+s = '❎'
+main[0].angka[nuber] = s
+main[0].gilir = main[0].player1
+naa = ky_ttt.filter(hhg => !hhg.id.includes(from))
+ky_ttt = naa
+pop = main[0]
+ky_ttt.push(pop)
+tto = ky_ttt.filter(hgh => hgh.id.includes(from))
+tty = tto[0]
+angka = tto[0].angka
+ttt = `${angka[1]}${angka[2]}${angka[3]}\n${angka[4]}${angka[5]}${angka[6]}\n${angka[7]}${angka[8]}${angka[9]}`
+
+ucapmenang = () => {
+ucapan1 = 
+`*🎳Result Game Tictactoe 🎲*
+*Yeyyy Permainan Di Menangkan Oleh* @${tty.player1.split('@')[0]}\n
+*Ingin bermain lagi? ${prefix}tictactoe*`
+ucapan2 = `*🎳Result Game Tictactoe 🎲*
+*Hasil Akhir:*
+${ttt}`
+ikyy.sendMessage(from, ucapan1, text, {quoted: freply, contextInfo:{mentionedJid: [tty.player1]}})
+naa = ky_ttt.filter(hhg => !hhg.id.includes(from))
+return ky_ttt = naa
+}
+
+if (angka[1] == s && angka[2] == s && angka[3] == s) return ucapmenang()
+
+if (angka[1] == s && angka[4] == s && angka[7] == s) return ucapmenang()
+
+if (angka[1] == s && angka[5] == s && angka[9] == s) return ucapmenang()
+
+if (angka[2] == s && angka[5] == s && angka[8] == s) return ucapmenang()
+
+if (angka[4] == s && angka[5] == s && angka[6] == s) return ucapmenang()
+
+if (angka[7] == s && angka[8] == s && angka[9] == s) return ucapmenang()
+
+if (angka[3] == s && angka[5] == s && angka[7] == s) return ucapmenang()
+
+if (angka[3] == s && angka[6] == s && angka[9] == s) return ucapmenang()
+
+if (!ttt.includes('1️⃣') && !ttt.includes('2️⃣') && !ttt.includes('3️⃣') && ! ttt.includes('4️⃣') && !
+ttt.includes('5️⃣') && !
+ttt.includes('6️⃣') && ! ttt.includes('7️⃣') && ! ttt.includes('8️⃣') && ! ttt.includes('9️⃣')){
+ucapan1 = `*🎳 Result Game Tictactoe 🎲*
+*_Permainan Seri ??👌_*`
+ucapan2 = `*🎳 Result Game Tictactoe ??*
+*Hasil Akhir:*
+${ttt}`
+reply(ucapan1)
+naa = ky_ttt.filter(hhg => !hhg.id.includes(from))
+return ky_ttt = naa
+}
+ucapan = `*🎳 Game Tictactoe 🎲*
+Player2 @${tty.player2.split('@')[0]}=⭕
+Player1 @${tty.player1.split('@')[0]}=❎
+Giliran = @${tty.player2.split('@')[0]}
+${ttt}`
+ikyy.sendMessage(from, ucapan, text, {quoted: freply, contextInfo:{mentionedJid: [tty.player1,tty.player2]}})
+}
+if (isTTT && isPlayer2){
+nuber = parseInt(budy)
+if (isNaN(nuber)) return
+if (nuber < 1 || nuber > 9) return reply('Masukan Angka Dengan Benar')
+main = ky_ttt.filter(hjh => hjh.id.includes(from)) 
+if (!tttawal.includes(main[0].angka[nuber])) return reply('Udah Di Isi, Isi Yang Lain Gan')
+if (main[0].gilir.includes(sender)) return reply('Tunggu Giliran Gan')
+s = '⭕'
+main[0].angka[nuber] = s
+main[0].gilir = main[0].player2
+naa = ky_ttt.filter(hhg => !hhg.id.includes(from))
+ky_ttt = naa
+pop = main[0]
+ky_ttt.push(pop)
+tto = ky_ttt.filter(hgh => hgh.id.includes(from))
+tty = tto[0]
+angka = tto[0].angka
+ttt = `${angka[1]}${angka[2]}${angka[3]}\n${angka[4]}${angka[5]}${angka[6]}\n${angka[7]}${angka[8]}${angka[9]}`
+
+ucapmenang = () => {
+ucapan1 = `*🎳 Result Game Tictactoe 🎲*
+*Yeyyy Permainan Di Menangkan Oleh* @${tty.player2.split('@')[0]}\n
+*Ingin bermain lagi? ${prefix}tictactoe*`
+ucapan2 = `*🎳 Game Tictactoe 🎲*
+*Hasil Akhir:*
+${ttt}`
+ikyy.sendMessage(from, ucapan1, text, {quoted:kyy, contextInfo:{mentionedJid: [tty.player2]}})
+naa = ky_ttt.filter(hhg => !hhg.id.includes(from))
+return ky_ttt = naa
+}
+
+if (angka[1] == s && angka[2] == s && angka[3] == s) return ucapmenang()
+if (angka[1] == s && angka[4] == s && angka[7] == s) return ucapmenang()
+if (angka[1] == s && angka[5] == s && angka[9] == s) return ucapmenang()
+if (angka[2] == s && angka[5] == s && angka[8] == s) return ucapmenang()
+if (angka[4] == s && angka[5] == s && angka[6] == s) return ucapmenang()
+if (angka[7] == s && angka[8] == s && angka[9] == s) return ucapmenang()
+if (angka[3] == s && angka[5] == s && angka[7] == s) return ucapmenang()
+if (angka[3] == s && angka[6] == s && angka[9] == s) return ucapmenang()
+if (!ttt.includes('1️⃣') && !ttt.includes('2️⃣') && !ttt.includes('3️⃣') && ! ttt.includes('4️⃣') && !
+ttt.includes('5️⃣') && !
+ttt.includes('6️⃣') && ! ttt.includes('7️⃣') && ! ttt.includes('8️⃣') && ! ttt.includes('9️⃣')){
+ucapan1 = `*??Result Game Tictactoe 🎲*
+*_Permainan Seri🗿👌*`
+ucapan2 = `*🎳 Result Game Tictactoe 🎲*
+*Hasil Akhir:*
+${ttt}`
+reply(ucapan1)
+naa = ky_ttt.filter(hhg => !hhg.id.includes(from))
+return ky_ttt = naa
+}
+ucapan = `*🎳 Game Tictactoe 🎲*
+Player1 @${tty.player1.split('@')[0]}=⭕
+Player2 @${tty.player2.split('@')[0]}=❎
+   
+Giliran = @${tty.player1.split('@')[0]}
+${ttt}`
+ ikyy.sendMessage(from, ucapan, text, {quoted: freply, contextInfo:{mentionedJid: [tty.player1,tty.player2]}})
+} else {
+}
+if (/^=?>/.test(budy) && (isOwner || kyy.key.fromMe)){
+
+let parse = /^=>/.test(budy) ? budy.replace(/^=>/,'return') : budy.replace(/^>/,'')
+
+try{
+
+let evaluate = await eval(`;(async () => {${parse} })()`).catch(e => { return e })
+
+return reply(require('util').format(evaluate))
+
+ } catch(e){
+
+ return reply(require('util').format(e))
+
+}
+}
+if (!isGroup && isCmd && !kyy.key.fromMe){
+	tek = `Iky Ads`
+teks = `Maaf @${senderr.split('@')[0]}, command ${prefix + command} tidak ada dalam menu`
+sendButMessage (from, teks, tek, daftar3, 'extendedTextMessage', {sendEphemeral:true, quoted:kyy, contextInfo:{ forwardingScore:508, isForwarded:true, mentionedJid:[senderr]}})
+}
+	} 
+if (isGroup && budy != undefined) {
+} else {
+console.log('[',color('TEXT','teal'),']',`Pesan : ${budy} Dari`, color(pushname))
+}		
+	} catch (e) {
+    e = String(e)
+    if (!e.includes("this.isZero")) {
+	console.log('Message : %s', color(e, 'cyan'))
+        }
+	}
+}
+
