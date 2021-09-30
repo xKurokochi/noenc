@@ -3635,13 +3635,10 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
                if (args.length < 1) return reply(`Masukkan nama characternya contoh #genshin mona`)
                if (genshin.includes(arg)) {
                    path = `./random/buildgi/${args[1]}.jpeg`
-              imageMsg = (await ikyy.prepareMessageMedia(path, "imageMessage", { thumbnail: buff, })).imageMessage
+              imageMsg = await ikyy.prepareMessageMedia(path, "imageMessage", { thumbnail: path, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`Follow @xkurokchi_`,buttons,headerType:4}
-              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
-              ikyy.relayWAMessage(prep)
-        
-                    break
+              break
        case 'kuismath':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (kuismath.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
