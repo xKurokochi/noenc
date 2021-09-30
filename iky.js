@@ -3632,18 +3632,16 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
 	case 'buildgi': 
-               if (args.length < 1) return reply(`Masukkan nama characternya contoh #genshin keqing`)
+               if (args.length < 1) return reply(`Masukkan nama characternya contoh #genshin mona`)
                if (genshin.includes(arg)) {
                    path = `./random/buildgi/${args[1]}.jpeg`
-                   await ikyy.sendMessage(from, path, image, {quoted: freply}).catch(e => {
-	       reply('_[ ! ] Error! Gagal Mengirim Media_')
-	       console.log(e)
-})
-               } else {
-                   reply(`Character yang kamu cari tidak tersedia!`)
-                    }
-               break
-		
+              imageMsg = (await ikyy.prepareMessageMedia(path, "imageMessage", { thumbnail: buff, })).imageMessage
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
+              contentText:`Follow @xkurokchi_`,buttons,headerType:4}
+              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              ikyy.relayWAMessage(prep)
+        
+                    break
        case 'kuismath':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (kuismath.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
