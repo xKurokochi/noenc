@@ -1781,7 +1781,8 @@ SEBELUM MELANJUTKAN PASTIKAN ANDA BERUMUR 18+
 		case 'thighs':
                 reply (mess.wait)
                buffer = await axios.get(`https://api-alphabot.herokuapp.com/api/nsfw/${command}?apikey=Alphabot`)
-		buff = await getBuffer(buffer.result)
+		buffers = buffer.result
+		buff = await getBuffer(buffers)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = await (ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
