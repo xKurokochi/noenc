@@ -1776,15 +1776,21 @@ SEBELUM MELANJUTKAN PASTIKAN ANDA BERUMUR 18+
 		case 'orgy':
 		case 'yuri':
 		case 'panties':
-		case 'neko':
+		case 'nsfwneko':
 		case 'pussy':
 		case 'thighs':
                 reply (mess.wait)
-               anu = await fetchJson(`https://api-alphabot.herokuapp.com/api/nsfw/${command}?apikey=Alphabot`)
-			buff = await getBuffer(anu.result)
-			sendFileFromUrl (buff, image, {quoted: freply, caption: `*TOBAT OM*`})
-		break
-
+              let nsfwom = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
+              let nsfwnya = nsfwom[Math.floor(Math.random() * (wipu.length))]
+              fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(nsfwnya))
+		      buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
+              imageMsg = ( await ikyy.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
+              contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
+              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              ikyy.relayWAMessage(prep)
+              fs.unlinkSync(`./${sender}.jpeg`)
+              break
 
 case 'ppcp':
 case 'ppcouple':
