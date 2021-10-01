@@ -691,7 +691,7 @@ const isVideo = (type === 'videoMessage')
              
         // MUTE
              if (isMuted){
-             if (!isGroupAdmins && !isPremium) return
+             if (!isGroupAdmins) return
  }
             
               const getWin = (userId) => {
@@ -1012,7 +1012,6 @@ case 'sendbug':
                ikyy.relayWAMessage(prep)
                break      
                case 'spamcall':{
-                if (!isPremium) return reply(mess.OnlyPrem)
                 if (args.length > 2) return reply(`Cara penggunaan : ${command} no hp`)
                 if (isNaN(args[1]) && args[1].startsWith('62')) return reply(`Harus berupa angka dan pastikan tidak memasukkan kode negara, contoh: ${command} 8127668234`)
                 fetchJson(`https://api.zeks.xyz/api/spamcall?apikey=${zekskey}&no=${args[1]}`)
@@ -1092,7 +1091,6 @@ case 'sendbug':
                     }
                     break
             case 'spamsms':{
-                if (!isPremium) return reply(`khusus premium`)
                 if (args.length > 2) return reply(`Cara penggunaan : ${command} no hp`)
    
   
@@ -1114,7 +1112,6 @@ case 'sendbug':
                 break
      
                 case 'bokep': case 'bkp': case 'randombokep':{
-                if (!isPremium) return reply(mess.OnlyPrem)
                 if (isGroup && !isNsfw) return reply(ind.notNsfw())
                 fetchJson(`https://pastebin.com/raw/k82VJzeP`).then((data) => {
                     var bokepp = JSON.parse(JSON.stringify(data))
@@ -4331,7 +4328,6 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
 })
                break
         case 'mediafire':
-               if (!isPremium) return sendButMessage (from, prem1, prem2, prem3, { quoted: freply})
                if (args.length < 1) return reply('Link Nya Mana? ')
                if(!isUrl(args[0]) && !args[0].includes('mediafire')) return reply(mess.error.Iv)
                reply(mess.wait)
@@ -4505,7 +4501,6 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
 }
              break
        case 'nhentai':
-              if (!isPremium) return sendButMessage (from, prem1, prem2, prem3, { quoted: freply})
               if (args.length == 0) return reply(`Example: ${prefix + command} 344253`)
               reply(mess.wait)
               henid = args[0]
@@ -4993,7 +4988,6 @@ a += `\`\`\`🐣 Title : ${i.title}\`\`\`
 })
                break
          case 'asupan': // shansekai                
-               if (!isPremium) return sendButMessage (from, prem1, prem2, prem3, { quoted: freply})
                reply(mess.wait)
                asupan()
               .then(async (body) => {
@@ -6391,31 +6385,6 @@ if (budy.includes("Numa")){
         ikyy.sendMessage(from, d, sticker, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "song : dj numa numa yei", 'jpegThumbnail': fs.readFileSync('./sticker/dnsnew.webp')}}}})
 
         }
-        if (budy.includes("#m")){
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
-}
-if (budy.includes("!m")){
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
-}
-        if (budy.includes("#a")){
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
-}
-if (budy.includes("!a")){
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
-}
-        if (budy.includes("#s")){
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
-}
-if (budy.includes("!s")){
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
-}
-if (budy.includes("bot")){
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
-}
-if (budy.includes("Bot")){
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
-}
-
 
 
 if (fs.existsSync(`./media/${from}.json`)) {
