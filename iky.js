@@ -1545,7 +1545,6 @@ wibu = `
 ┃▹ ${prefix}tinyurl
 ┃▹ ${prefix}cuttly
 ┃▹ ${prefix}affect
-┃▹ ${prefix}picture
 ┗━▹
 
 `
@@ -2448,19 +2447,6 @@ Renge Bot`, imageMessage: imageMsg,
 ┃▹  ${prefix}sagiri
 ┃▹  ${prefix}hentai
 ┃▹  ${prefix}cosplay
-┃▹  ${prefix}wallnime
-┃▹  ${prefix}kusonime
-┃▹  ${prefix}megumin
-┃▹  ${prefix}otakudesu
-┃▹  ${prefix}doujindesu
-┃▹  ${prefix}storyanime
-┃▹  ${prefix}nakanomiku
-┃▹  ${prefix}nakanoikyy
-┃▹  ${prefix}nakanoitsuki
-┃▹  ${prefix}otakuongoing
-┃▹  ${prefix}nhentai *code*
-┃▹  ${prefix}nekopoi *link*
-┃▹  ${prefix}nekopoisearch
 ┗⬡
 `
 
@@ -2513,20 +2499,10 @@ Renge Bot`, imageMessage: imageMsg,
     
 
 ┏⬡ 𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔
-┃▹  ${prefix}fb 
-┃▹  ${prefix}igdl 
-┃▹  ${prefix}igdl2 
-┃▹  ${prefix}twitter 
-┃▹  ${prefix}tiktok 
 ┃▹  ${prefix}play 
 ┃▹  ${prefix}ythd 
 ┃▹  ${prefix}ytmp3 
 ┃▹  ${prefix}ytmp4 
-┃▹  ${prefix}soundcloud 
-┃▹  ${prefix}tiktoknowm 
-┃▹  ${prefix}tiktokaudio
-┃▹  ${prefix}mediafire 
-┃▹  ${prefix}nhentaipdf *code*
 ┗⬡ `
 
                buttons =  [
@@ -2582,14 +2558,8 @@ Renge Bot`, imageMessage: imageMsg,
 ┃▹  ${prefix}shopee *product*
 ┃▹  ${prefix}playstore *query*
 ┃▹  ${prefix}ssweb *query*
-┃▹  ${prefix}google *query*
 ┃▹  ${prefix}image *query*
-┃▹  ${prefix}pinterest *query*
 ┃▹  ${prefix}nulis *teks*
-┃▹  ${prefix}iguser *ussername*
-┃▹  ${prefix}igstalk *username*
-┃▹  ${prefix}githubstalk *username*
-┃▹  ${prefix}tiktokstalk *ussername*
 ┃▹  ${prefix}img2url *reply foto*
 ┃▹  ${prefix}ytsearch *query*
 ┗⬡ `
@@ -3141,8 +3111,8 @@ Renge Bot`, imageMessage: imageMsg,
                break
    case 'command':
                list = []
-               listmenu = [`groupmenu`,`randomimage`,`wibu2`,`storymenu`,`porno`,`randomtext`,`wibumenu`,`stickermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`owner`]
-               listmenuu = [`Menu Group`,`Random Image`,`Nsfw Anime`,`Movie&Story`,`18+ Menu`,`RandomText`,`Wibu Menu`,`Sticker Menu`,`Game Menu`,`For Fun Menu`,`Downloader`,`Info Menu`,`Menu Lainnya`,`OwnerBot`]
+               listmenu = [`groupmenu`,`randomimage`,`wibu2`,,`porno`,`randomtext`,`wibumenu`,`stickermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`owner`]
+               listmenuu = [`Menu Group`,`Random Image`,`Nsfw Anime`,`18+ Menu`,`RandomText`,`Wibu Menu`,`Sticker Menu`,`Game Menu`,`For Fun Menu`,`Downloader`,`Info Menu`,`Menu Lainnya`,`OwnerBot`]
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
