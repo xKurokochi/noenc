@@ -3111,7 +3111,7 @@ Renge Bot`, imageMessage: imageMsg,
                break
    case 'command':
                list = []
-               listmenu = [`groupmenu`,`randomimage`,`wibu2`,,`porno`,`randomtext`,`wibumenu`,`stickermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`owner`]
+               listmenu = [`groupmenu`,`randomimage`,`wibu2`,`porno`,`randomtext`,`wibumenu`,`stickermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`owner`]
                listmenuu = [`Menu Group`,`Random Image`,`Nsfw Anime`,`18+ Menu`,`RandomText`,`Wibu Menu`,`Sticker Menu`,`Game Menu`,`For Fun Menu`,`Downloader`,`Info Menu`,`Menu Lainnya`,`OwnerBot`]
                nombor = 1
                startnum = 0
