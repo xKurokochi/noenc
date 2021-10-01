@@ -1161,7 +1161,7 @@ case 'sendbug':
 ┏━▹ 𝐠𝐫𝐨𝐮𝐩𝐦𝐞𝐧𝐮
 ┗━▹ 𝐰𝐢𝐛𝐮𝐦𝐞𝐧𝐮
 ┏━▹ 𝐬𝐭𝐢𝐜𝐤𝐞𝐫𝐦𝐞𝐧𝐮
-┗━▹ 𝐨𝐰𝐧𝐞𝐫𝐦𝐞𝐧𝐮
+┗━▹ 𝐫𝐚𝐧𝐝𝐨𝐦𝐢𝐦𝐚𝐠𝐞
 ┏━▹ 𝐠𝐚𝐦𝐞𝐦𝐞𝐧𝐮
 ┗━▹ 𝐟𝐮𝐧𝐦𝐞𝐧𝐮
 ┏━▹ 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐦𝐞𝐧𝐮
@@ -1170,10 +1170,6 @@ case 'sendbug':
 ┗━▹ 𝐈𝐦𝐚𝐠𝐞𝐦𝐚𝐧𝐢
 ┏━▹ 𝐫𝐚𝐧𝐝𝐨𝐦𝐭𝐞𝐱𝐭
 ┗━▹ 𝐦𝐨𝐯𝐢𝐞𝐦𝐞𝐧𝐮
-┏━▹ 𝐫𝐚𝐧𝐝𝐨𝐦𝐢𝐦𝐚𝐠𝐞
-┗━▹ 𝐞𝐩𝐡𝐨𝐭𝐨
-┏━▹ 𝐩𝐡𝐨𝐭𝐨𝐤𝐲
-┗━▹ 𝐭𝐞𝐱𝐭𝐩𝐫𝐨
 
 
  𝔍𝔞𝔫𝔤𝔞𝔫 𝔭𝔢𝔯𝔫𝔞𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔰𝔢𝔰𝔢𝔬𝔯𝔞𝔫𝔤 
@@ -3145,8 +3141,8 @@ Renge Bot`, imageMessage: imageMsg,
                break
    case 'command':
                list = []
-               listmenu = [`groupmenu`,`photoxy`,`ephoto`,`randomimage`,`wibu2`,`storymenu`,`porno`,`randomtext`,`wibumenu`,`stickermenu`,`ownermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`owner`]
-               listmenuu = [`Menu Group`,`Photo Oky`,`Ephoto Menu`,`Random Image`,`Nsfw Anime`,`Movie&Story`,`18+ Menu`,`RandomText`,`Wibu Menu`,`Sticker Menu`,`Owner Command`,`Game Menu`,`For Fun Menu`,`Downloader`,`Info Menu`,`Menu Lainnya`,`OwnerBot`]
+               listmenu = [`groupmenu`,`randomimage`,`wibu2`,`storymenu`,`porno`,`randomtext`,`wibumenu`,`stickermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`owner`]
+               listmenuu = [`Menu Group`,`Random Image`,`Nsfw Anime`,`Movie&Story`,`18+ Menu`,`RandomText`,`Wibu Menu`,`Sticker Menu`,`Game Menu`,`For Fun Menu`,`Downloader`,`Info Menu`,`Menu Lainnya`,`OwnerBot`]
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
