@@ -3590,7 +3590,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 	case 'buildgi': 
                if (args.length < 1) return reply(`Masukkan nama characternya contoh #genshin mona`)
                if (genshin.includes(arg)) {
-                   path = fs.readFileSync(`./image/buildgi/${args[0]}.jpeg`)
+              const path = fs.readFileSync(`./image/buildgi/${args[0]}.jpeg`)
               imageMsg = await ikyy.sendMessage(from, path, MessageType.image, {quoted: freply, mimetype: 'image'})
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`Jangan Lupa Donasi Ya Kak ☕`,buttons,headerType:4}}
