@@ -4530,30 +4530,15 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
               if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
               reply(mess.wait)
               query = args.join(" ")
-              get_result = await fetchJson(`https://api.lolhuman.xyz/api/manga?apikey=IkyAds&query=${query}`)
-              get_result = get_result.result
-              ini_txt = `Id : ${get_result.id}\n`
-              ini_txt += `Id MAL : ${get_result.idMal}\n`
-              ini_txt += `Title : ${get_result.title.romaji}\n`
-              ini_txt += `English : ${get_result.title.english}\n`
-              ini_txt += `Native : ${get_result.title.native}\n`
-              ini_txt += `Format : ${get_result.format}\n`
-              ini_txt += `Chapters : ${get_result.chapters}\n`
-              ini_txt += `Volume : ${get_result.volumes}\n`
-              ini_txt += `Status : ${get_result.status}\n`
-              ini_txt += `Source : ${get_result.source}\n`
-              ini_txt += `Start Date : ${get_result.startDate.day} - ${get_result.startDate.month} - ${get_result.startDate.year}\n`
-              ini_txt += `End Date : ${get_result.endDate.day} - ${get_result.endDate.month} - ${get_result.endDate.year}\n`
-              ini_txt += `Genre : ${get_result.genres.join(", ")}\n`
-              ini_txt += `Synonyms : ${get_result.synonyms.join(", ")}\n`
-              ini_txt += `Score : ${get_result.averageScore}%\n`
-              ini_txt += `Characters : \n`
-              ini_character = get_result.characters.nodes
-              for (var x of ini_character) {
-              ini_txt += `- ${x.name.full} (${x.name.native})\n`
-}
-              ini_txt += `\nDescription : ${get_result.description}`
-              buff = await getBuffer(get_result.coverImage.large)
+              get_result = await fetchJson(`http://zekais-api.herokuapp.com/mangatoon?query=${query}&apikey=siuwcCWH`)
+              ini_txt += `Title : ${get_result.title}\n`
+              ini_txt += `Genre : ${get_result.genre}\n`
+              ini_txt += `Author : ${get_result.author}\n`
+              ini_txt += `Score : ${get_result.score}\n`
+              ini_txt += `View : ${get_result.view_count}\n`
+              ini_txt += `Like : ${get_result.like_count}\n`
+              ini_txt += `Desc : ${get_result.desc}\n`
+              buff = await getBuffer(get_result.thumb)
               buttons = [{buttonId: `!menu`,buttonText:{displayText: `Back To Menu`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
