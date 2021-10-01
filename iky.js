@@ -3831,10 +3831,10 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'asahotak':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (asahotak.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/asahotak?apikey=IkyAds`)
-              jawaban = get_result.result.jawaban
+              get_result = await fetchJson(`https://dapuhy-api.herokuapp.com/api/fun/asahotak?apikey=CNIWdZFisVW08Xp`)
+              jawaban = get_result.jawaban
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
-              pertanyaan = get_result.result.pertanyaan
+              pertanyaan = get_result.pertanyaan
               ikyy.sendMessage(from, '*+* ```Asah Otak```\n\n• *soal* :'+pertanyaan+'\n• *kisi²* :'+kisi_kisi, text, { quoted: freply}).then(() => {
               asahotak[sender.split('@')[0]] = jawaban.toLowerCase()
               fs.writeFileSync("./database/asahotak.json", JSON.stringify(asahotak))
