@@ -3523,7 +3523,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
           },]);
               
             
-              let anoh = anu.data.result.aswer
+              let anoh = anu.data.jawaban
               let rgfds = []
               for (let i of anoh){
               let fefs = i.split('/') ? i.split('/')[0] : i
@@ -4537,12 +4537,11 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
               ini_txt += `Score : ${get_result.score}\n`
               ini_txt += `View : ${get_result.view_count}\n`
               ini_txt += `Like : ${get_result.like_count}\n`
-              ini_txt += `Desc : ${get_result.desc}\n`
+              ini_txt += `Desc : \n${get_result.desc}`
               buff = await getBuffer(get_result.thumb)
               buttons = [{buttonId: `!menu`,buttonText:{displayText: `Back To Menu`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
-              contentText: ini_txt,buttons,headerType:4}
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg, contentText: ini_txt, buttons, headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
          break
