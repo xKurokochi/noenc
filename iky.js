@@ -4836,8 +4836,8 @@ break
 		   if (args.length == 0) return reply(`Example: ${prefix + command} loli`)
                     query = args.join(" ")
                  reply (mess.wait)
-                    ini_url = await fetchJson(`http://api.lolhuman.xyz/api/pinterest?apikey=IkyAds&query=${query}`)
-                    ini_url = ini_url.result
+                    ini_url = await fetchJson(`https://dapuhy-api.herokuapp.com/api/search/pinterest-image?query=${query}&apikey=CNIWdZFisVW08Xp`)
+                    ini_url = ini_url.data
                     buff = await getBuffer(ini_url)
                     buttons = [{buttonId: `${prefix + command} ${query}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
