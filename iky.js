@@ -3510,8 +3510,8 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'family100':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (game.isfam(from, family100)) return reply(`Masih ada soal yang belum di selesaikan`)
-              anu = await axios.get(`http://api.lolhuman.xyz/api/tebak/family100?apikey=IkyAds`)
-              titid =  `*JAWABLAH SOAL BERIKUT*\n\n*Soal :* ${anu.data.result.question}\nTotal Jawaban :* ${anu.data.result.answer.length}\n\nWaktu : ${gamewaktu}s `
+              anu = await axios.get(`http://zekais-api.herokuapp.com/family100?apikey=siuwcCWH`)
+              titid =  `*JAWABLAH SOAL BERIKUT*\n\n*Soal :* ${anu.data.soal}\nTotal Jawaban :* ${anu.data.jawaban.length}\n\nWaktu : ${gamewaktu}s `
           
                    sendButMessage(from, titid, `Klik Untuk Ke Game Selanjutnya`, [
           {
