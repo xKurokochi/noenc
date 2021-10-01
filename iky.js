@@ -3590,10 +3590,10 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 	case 'buildgi': 
                if (args.length < 1) return reply(`Masukkan nama characternya contoh #genshin mona`)
                if (genshin.includes(arg)) {
-                   path = `./random/buildgi/${args[1]}.jpeg`
+                   path = fs.readFileSync(`./random/buildgi/${args[1]}.jpeg`)
               imageMsg = await ikyy.prepareMessageMedia(path, "imageMessage", { thumbnail: path, }).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
-              contentText:`Follow @xkurokchi_`,buttons,headerType:4}}
+              contentText:`Jangan Lupa Donasi Ya Kak ☕`,buttons,headerType:4}}
               break
        case 'kuismath':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
@@ -6322,7 +6322,7 @@ if (budy.includes(`assalamualaikum`)) {
 if (budy.includes(`anjing`)) {
                   reply(`santai jamet`)
                   }
-                  if (budy.includes(`Iky`)) {
+                  if (budy.includes(`Niskata`)) {
                   reply(`Auto respon: Iya kenapa manggil ownerku?`)
                   }
 
