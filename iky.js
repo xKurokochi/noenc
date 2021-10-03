@@ -3500,7 +3500,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'tebakanime':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakanime.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebakchara?apikey=IkyAds`)
+              get_result = await fetchJson(`https://dapuhy-api.herokuapp.com/api/anime/tebakwaifu?apikey=CNIWdZFisVW08Xp`)
               ini_image = get_result.result.image
               jawaban = get_result.result.name
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
