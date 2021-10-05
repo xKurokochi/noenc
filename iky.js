@@ -1418,7 +1418,7 @@ wibu = `
 					if (args.length < 1) return reply('Textnya mana um?')
 					anu = await simih(body.slice(5)) 
 					coba = await axios.get(`https://simsumi.herokuapp.com/api?text=${body.slice(5)}&lang=id`)
-					reply(from, coba.success, id)
+					reply(coba.success)
 					break 
 					case 'simih':
 					
