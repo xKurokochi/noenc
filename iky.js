@@ -1416,9 +1416,8 @@ wibu = `
         break;
         case 'simi':
 					if (args.length < 1) return reply('Textnya mana um?')
-					teks = body.slice(5)
-					anu = await simih(teks) 
-					coba = fetchJson(`https://simsumi.herokuapp.com/api?text=${teks}&lang=id`)
+					anu = await simih(body.slice(5)) 
+					coba = fetchJson(`https://simsumi.herokuapp.com/api?text=${body.slice(5)}&lang=id`)
 					reply(coba.success)
 					break 
 					case 'simih':
