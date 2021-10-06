@@ -3588,12 +3588,14 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               break
 	case 'buildgi': 
                if (args.length < 1) return reply(`Masukkan nama characternya contoh #genshin mona`)
-               if (genshin.includes(arg)) {
-              const path = fs.readFileSync(`./image/buildgi/${args[0]}.jpeg`)
-              imageMsg = await ikyy.sendMessage(from, path, MessageType.image, {quoted: freply, mimetype: 'image'})
+              buff = await getBuffer(`https://upanh.nhatkythuthuat.com/images/2021/09/01/${args[0]}.jpg`)
+                 buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
+              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
-              contentText:`Jangan Lupa Donasi Ya Kak ☕`,buttons,headerType:4}}
-              break
+              contentText:`Follow @xkurokochi_`,buttons,headerType:4}
+              prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              ikyy.relayWAMessage(prep)
+		break
        case 'kuismath':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (kuismath.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
