@@ -2010,8 +2010,7 @@ case "mode":
               reply(`Success mode self gan`)
               break
                 case 'quotes':
-                    quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=IkyAds`)
-                    quotes = quotes.result
+                    quotes = await fetchJson(`https://github.com/yogipw/MFarelS-API/blob/master/lib/quote.json`)
                     author = quotes.by
                     quotes = quotes.quote
                     reply(`_${quotes}_\n\n*â€• ${author}*`)
