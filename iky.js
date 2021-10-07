@@ -2039,11 +2039,11 @@ case "mode":
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
               ikyy.relayWAMessage(prep)
                  break
-                case 'faktaunik':
                 case 'katabijak':
+                case 'motivasi':
                 case 'pantun':
                 case 'bucin':
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/random/${command}?apikey=IkyAds`)
+                    get_result = await fetchJson(`https://h4ck3rs404-api.herokuapp.com/api/${command}?apikey=404Api`)
                    titid = get_result.result
                    sendButMessage(from, titid, `Klik Untuk Ke Quotes Selanjutnya`, [
           {
@@ -2300,14 +2300,11 @@ Renge Bot`, imageMessage: imageMsg,
                
 ┏⬡  𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔
 ┃▹ ${prefix}quotes
-┃▹ ${prefix}quotesdiLan
 ┃▹ ${prefix}quotesanime
-┃▹ ${prefix}quotesimage
-┃▹ ${prefix}faktaunik
+┃▹ ${prefix}motivasi
 ┃▹ ${prefix}katabijak
 ┃▹ ${prefix}pantun
 ┃▹ ${prefix}bucin
-┃▹ ${prefix}randomnama
 ┗⬡
 
 𝔍𝔞𝔫𝔤𝔞𝔫 𝔭𝔢𝔯𝔫𝔞𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔰𝔢𝔰𝔢𝔬𝔯𝔞𝔫𝔤 
