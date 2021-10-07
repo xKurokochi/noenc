@@ -2017,13 +2017,12 @@ case "mode":
                     reply(`_${quotesnya}_\n\n*â€• ${author}*`)
                     break
                 case 'quotesanime':
-                    quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotesnime?apikey=IkyAds`)
+                    quotes = await fetchJson(`https://h4ck3rs404-api.herokuapp.com/api/animequote?apikey=404Api`)
                     quotes = quotes.result
                     quote = quotes.quote
-                    char = quotes.character
+                    char = quotes.chara
                     anime = quotes.anime
-                    episode = quotes.episode
-                    reply(`_${quote}_\n\n*• ${char}*\n*• ${anime} ${episode}*`)
+                    reply(`_${quote}_\n\n*• ${char}*\n*• ${anime}*`)
                     break
                 case 'quotesdilan':
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/quotes/diLan?apikey=IkyAds`)
