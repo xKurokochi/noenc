@@ -2011,9 +2011,10 @@ case "mode":
               break
                 case 'quotes':
                     quotes = await fetchJson(`https://raw.githubusercontent.com/yogipw/MFarelS-API/master/lib/quote.json`)
-                    author = quotes.by
-                    quotes = quotes.quote
-                    reply(`_${quotes}_\n\n*â€• ${author}*`)
+		let quote = quotes[Math.floor(Math.random() * (quotes.length))]
+                    author = quote.by
+                    quotes = quote.quote
+                    reply(`_${quote}_\n\n*â€• ${author}*`)
                     break
                 case 'quotesanime':
                     quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotesnime?apikey=IkyAds`)
