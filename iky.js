@@ -1226,48 +1226,117 @@ break
 case 'textpro':
 wibu = `
 ┏━▹「 Text Pro Me 」
-┃▹ ${prefix}blackpink text
-┃▹ ${prefix}neon text
-┃▹ ${prefix}greenneon text
-┃▹ ${prefix}advanceglow text
-┃▹ ${prefix}futureneon text
-┃▹ ${prefix}sandwriting text
-┃▹ ${prefix}sandsummer text
-┃▹ ${prefix}sandengraved text
-┃▹ ${prefix}metaldark text
-┃▹ ${prefix}neonlight text
-┃▹ ${prefix}holographic text
-┃▹ ${prefix}text1917 text
-┃▹ ${prefix}minion text
-┃▹ ${prefix}deluxesilver text
-┃▹ ${prefix}newyearcard text
-┃▹ ${prefix}bloodfrosted text
-┃▹ ${prefix}halloween text
-┃▹ ${prefix}jokerlogo text
-┃▹ ${prefix}fireworksparkle text
-┃▹ ${prefix}natureleaves text
-┃▹ ${prefix}bokeh text
-┃▹ ${prefix}toxic text
-┃▹ ${prefix}strawberry text
-┃▹ ${prefix}box3d text
-┃▹ ${prefix}roadwarning text
-┃▹ ${prefix}breakwall text
-┃▹ ${prefix}icecold text
-┃▹ ${prefix}luxury text
-┃▹ ${prefix}cloud text
-┃▹ ${prefix}summersand text
-┃▹ ${prefix}horrorblood text
-┃▹ ${prefix}thunder text
-┃▹ ${prefix}pornhub text1 text2
-┃▹ ${prefix}glitch text1 text2
-┃▹ ${prefix}avenger text1 text2
-┃▹ ${prefix}space text1 text2
-┃▹ ${prefix}ninjalogo text1 text2
-┃▹ ${prefix}marvelstudio text1 text2
-┃▹ ${prefix}lionlogo text1 text2
-┃▹ ${prefix}wolflogo text1 text2
-┃▹ ${prefix}steel3d text1 text2
-┃▹ ${prefix}wallgravity text1 text2
+┃▹ ${prefix}Bokeh text
+┃▹ ${prefix}BrokenGlass text
+┃▹ ${prefix}ArtPaperCut text
+┃▹ ${prefix}NeonDevil text
+┃▹ ${prefix}3DUnderWater text
+┃▹ ${prefix}BearLogo text
+┃▹ ${prefix}Biscuit text
+┃▹ ${prefix}AbstraGold text
+┃▹ ${prefix}RusyMetal text
+┃▹ ${prefix}FruitJuice text
+┃▹ ${prefix}IceCold text
+┃▹ ${prefix}Marble text
+┃▹ ${prefix}Horror text
+┃▹ ${prefix}PlasticBagDrug text
+┃▹ ${prefix}Honey text
+┃▹ ${prefix}Crismast text
+┃▹ ${prefix}BreakWall text
+┃▹ ${prefix}DropWater text
+┃▹ ${prefix}GreenNeon text
+┃▹ ${prefix}Wood text
+┃▹ ${prefix}MetalRainbow text
+┃▹ ${prefix}PurpleGem text
+┃▹ ${prefix}ShinyMetal text
+┃▹ ${prefix}YellowJewelry text
+┃▹ ${prefix}ErodedMetal text
+┃▹ ${prefix}BronzeGlitter text
+┃▹ ${prefix}BlueGem text
+┃▹ ${prefix}BlueMetal text
+┃▹ ${prefix}3DGlowing text
+┃▹ ${prefix}WonderfulGraffiti text
+┃▹ ${prefix}Futuristic text
+┃▹ ${prefix}Snow text
+┃▹ ${prefix}Cloud text
+┃▹ ${prefix}LuxuryGold text
+┃▹ ${prefix}Blackpink text
+┃▹ ${prefix}Cloud2 text
+┃▹ ${prefix}SummerBeach text
+┃▹ ${prefix}Writing text
+┃▹ ${prefix}Emgraved3D text
+┃▹ ${prefix}Summery text
+┃▹ ${prefix}3DGlue text
+┃▹ ${prefix}MetalDark text
+┃▹ ${prefix}NeonLight text
+┃▹ ${prefix}Minion text
+┃▹ ${prefix}Holograpic text
+┃▹ ${prefix}MetalPurple text
+┃▹ ${prefix}DeluxeSilver  text
+┃▹ ${prefix}GlosyCarbon text
+┃▹ ${prefix}Fabric text
+┃▹ ${prefix}Neon text
+┃▹ ${prefix}NewYear text
+┃▹ ${prefix}NewYear2 text
+┃▹ ${prefix}XmasCards text
+┃▹ ${prefix}Blood text
+┃▹ ${prefix}Halloween text
+┃▹ ${prefix}LogoJoker text
+┃▹ ${prefix}Wicker text
+┃▹ ${prefix}NaturalLeaves text
+┃▹ ${prefix}FireworkSparkle text
+┃▹ ${prefix}Skeleton text
+┃▹ ${prefix}Steel text
+┃▹ ${prefix}UltraGloss text
+┃▹ ${prefix}Denim text
+┃▹ ${prefix}DecorateGreen text
+┃▹ ${prefix}Rock text
+┃▹ ${prefix}Lava text 
+┃▹ ${prefix}YellowGlass text
+┃▹ ${prefix}PurpleShiny text
+┃▹ ${prefix}CaptainAmerica text
+┃▹ ${prefix}Robot text
+┃▹ ${prefix}RainbowEqualizer text
+┃▹ ${prefix}Toxic text
+┃▹ ${prefix}PinkSparkling text
+┃▹ ${prefix}ChocolateCake text
+┃▹ ${prefix}PurpleGlass text
+┃▹ ${prefix}Strawberry text
+┃▹ ${prefix}KoiFish text
+┃▹ ${prefix}Bread text
+┃▹ ${prefix}MatixStyle text
+┃▹ ${prefix}HorrorBlood text
+┃▹ ${prefix}NeonLight2 text
+┃▹ ${prefix}3DBox text
+┃▹ ${prefix}Neon2 text
+┃▹ ${prefix}RoadWarning text
+┃▹ ${prefix}GreenHorror text
+┃▹ ${prefix}Transformer text
+┃▹ ${prefix}Berry text
+┃▹ ${prefix}Thunder2 text
+┃▹ ${prefix}MagmaHot text
+┃▹ ${prefix}3DStone text
+┃▹ ${prefix}3DNeonLight text
+┃▹ ${prefix}HarryPotter text
+┃▹ ${prefix}Embossed text
+┃▹ ${prefix}Fiction text
+┃▹ ${prefix}Layered text1 text2
+┃▹ ${prefix}8Bit text1 text2
+┃▹ ${prefix}VintageStyle text1 text2
+┃▹ ${prefix}Space3D text1 text2
+┃▹ ${prefix}Glitch text1 text2
+┃▹ ${prefix}Glitch2 text1 text2
+┃▹ ${prefix}Stone text1 text2
+┃▹ ${prefix}Pornhub text1 text2
+┃▹ ${prefix}AvengersLogo text1 text2
+┃▹ ${prefix}CoolGraffiti text1 text2
+┃▹ ${prefix}MarvelStudio text1 text2
+┃▹ ${prefix}MarvelStudio2 text1 text2
+┃▹ ${prefix}LionLogo text1 text2
+┃▹ ${prefix}WallGraffiti text1 text2
+┃▹ ${prefix}BlackWhite text1 text2
+┃▹ ${prefix}NinjaLogo text1 text2
+┃▹ ${prefix}3DSteel text1 text2
 ┗━▹ `
 sendButMessage(from, wibu, `Renge Bot`, [
           {
@@ -1791,10 +1860,10 @@ case 'meme':
 case 'memek':
 
  buff = await getBuffer ('https://h4ck3rs404-api.herokuapp.com/api/random/meme?apikey=404Api')
-buff = buff.url
-
+buff = buff.result
+res = buff.url
 buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `NEXT`},type:1}]
-              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              imageMsg = (await ikyy.prepareMessageMedia(res, "imageMessage", { thumbnail: res, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
@@ -1802,42 +1871,101 @@ buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `NEXT`},typ
     
 break
                     // Textprome //
-                case 'blackpink':
-                case 'neon':
-                case 'greenneon':
-                case 'advanceglow':
-                case 'futureneon':
-                case 'sandwriting':
-                case 'sandsummer':
-                case 'sandengraved':
-                case 'metaldark':
-                case 'neonlight':
-                case 'holographic':
-                case 'text1917':
-                case 'minion':
-                case 'deluxesilver':
-                case 'newyearcard':
-                case 'bloodfrosted':
-                case 'halloween':
-                case 'jokerlogo':
-                case 'fireworksparkle':
-                case 'natureleaves':
                 case 'bokeh':
-                case 'toxic':
-                case 'strawberry':
-                case 'box3d':
-                case 'roadwarning':
-                case 'breakwall':
+                case 'brokenglass':
+                case 'artpapercut ':
+                case 'neondevil':
+                case '3dunderwater':
+                case 'bearlogo':
+                case 'biscuit':
+                case 'abstragold':
+                case 'rusymetal':
+                case 'fruitjuice':
                 case 'icecold':
-                case 'luxury':
-                case 'cloud':
-                case 'summersand':
-                case 'horrorblood':
-                case 'thunder':
+                case 'marble':
+                case 'horror':
+                case 'plasticbagdrug':
+                case 'honey':
+                case 'crismast':
+                case 'breakwall':
+                case 'dropwater':
+                case 'greenneon':
+                case 'wood':
+                case 'metalrainbow':
+                case 'purplegem':
+                case 'shinymetal':
+                case 'yellowjewelry':
+                case 'erodedmetal':
+                case 'bronzeglitter':
+                case 'bluegem':
+                case 'bluemetal':
+                case '3dglowing':
+                case 'wonderfulgraffiti':
+                case 'futuristic':
+                case 'snow':
+		case 'cloud':
+		case 'luxurygold':
+		case 'blackpink':
+		case 'cloud2':
+		case 'summerbeach':
+		case 'writing':
+		case 'summery':
+		case '3dglue':
+		case 'metaldark':
+		case 'neonlight':
+		case 'minion':
+		case 'holograpic':
+		case 'metalpurple':
+		case 'deluxesilver':
+		case 'glosycarbon':
+		case 'fabric':
+		case 'neon':
+		case 'newyear':
+		case 'newyear2':
+		case 'xmascards':
+		case 'halloween':
+		case 'logojoker':
+		case 'wicker':
+		case 'naturalleaves':
+		case 'fireworksparkle':
+		case 'skeleton':
+		case 'steel':
+		case 'ultragloss':
+		case 'denim':
+		case 'decorategreen':
+		case 'rock':
+		case 'lava':
+		case 'yellowgrass':
+		case 'purpleshiny':
+		case 'captainamerica':
+		case 'robot':
+		case 'toxic':
+		case 'rainbowequalizer':
+		case 'pinksparkling':
+		case 'chocolatecake ':
+		case 'purpleglass':
+		case 'strawberry':
+		case 'koifish':
+		case 'bread':
+		case 'horrorblood':
+		case 'neonlight2':
+		case '3dbox':
+		case 'neon2':
+		case 'roadwarning':
+		case 'greeenhorror':
+		case 'transformer':
+		case 'berry':
+		case 'thunder2':
+		case 'magmahot':
+		case '3dstone':
+		case '3dneonlight':
+		case 'harrypotter':
+		case 'embossed':
+		case 'Fiction':
                 reply (mess.wait)
                     if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
                     ini_txt = args.join(" ")
-                  buff = await getBuffer(`https://api.lolhuman.xyz/api/textprome/${command}?apikey=IkyAds&text=${ini_txt}`)
+                  buff = await getBuffer(`https://dapuhy-api.herokuapp.com/api/textpro/${command}?text={ini_txt}&apikey=CNIWdZFisVW08Xp`)
                  buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
@@ -1846,16 +1974,22 @@ break
               ikyy.relayWAMessage(prep)
         
                     break
-                case 'pornhub':
+                case 'layered':
+                case '8bit':
+                case 'vintagestyle':
+                case 'space3d':
                 case 'glitch':
-                case 'avenger':
-                case 'space':
-                case 'ninjalogo':
+                case 'glitch2':
+                case 'stone':
+                case 'avengerslogo':
+                case 'coolgraffiti':
                 case 'marvelstudio':
-                case 'lionlogo':
-                case 'wolflogo':
-                case 'steel3d':
-                case 'wallgravity':
+		case 'marvelstudio2':
+		case 'lionlogo':
+		case 'wallgraffiti':
+		case 'blackwhite':
+		case 'ninjalogo':
+		case '3dsteel':
                 reply (mess.wait)
                     if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
                     txt1 = args[0]
@@ -3107,8 +3241,8 @@ Renge Bot`, imageMessage: imageMsg,
                break
    case 'command':
                list = []
-               listmenu = [`groupmenu`,`randomimage`,`wibu2`,`porno`,`randomtext`,`wibumenu`,`stickermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`owner`]
-               listmenuu = [`Menu Group`,`Random Image`,`Nsfw Anime`,`18+ Menu`,`RandomText`,`Wibu Menu`,`Sticker Menu`,`Game Menu`,`For Fun Menu`,`Downloader`,`Info Menu`,`Menu Lainnya`,`OwnerBot`]
+               listmenu = [`groupmenu`,`randomimage`,`wibu2`,`porno`,`randomtext`, `textpro`,`wibumenu`,`stickermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`owner`]
+               listmenuu = [`Menu Group`,`Random Image`,`Nsfw Anime`,`18+ Menu`,`RandomText`, `TextPro Menu`,`Wibu Menu`,`Sticker Menu`,`Game Menu`,`For Fun Menu`,`Downloader`,`Info Menu`,`Menu Lainnya`,`OwnerBot`]
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
