@@ -1860,10 +1860,9 @@ case 'meme':
 case 'memek':
 
  buff = await getBuffer ('https://h4ck3rs404-api.herokuapp.com/api/random/meme?apikey=404Api')
-buff = buff.result
-res = buff.url
+buff = buff.result.url
 buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `NEXT`},type:1}]
-              imageMsg = (await ikyy.prepareMessageMedia(res, "imageMessage", { thumbnail: res, })).imageMessage
+              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await ikyy.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
