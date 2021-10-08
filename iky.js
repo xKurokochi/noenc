@@ -1297,8 +1297,8 @@ case 'wibu2':
 case 'nsfwanime':
 wibu = `
 ┏━▹ MENU
-┃▹ ahegao
-┃▹ ass
+┃▹ahegao
+┃▹ass
 ┃▹bdsm
 ┃▹blowjob
 ┃▹cuckold
@@ -1315,7 +1315,6 @@ wibu = `
 ┃▹orgy
 ┃▹yuri
 ┃▹panties
-┃▹nsfwneko
 ┃▹pussy
 ┃▹thighs
 ┗━▹
@@ -1438,7 +1437,8 @@ wibu = `
 					break
 					case 'darkjoke': 
 				
-				buff = await getBuffer(`http://lolhuman.herokuapp.com/api/meme/darkjoke?apikey=IkyAds`, {method: 'get'})
+				buff = await getBuffer(`https://h4ck3rs404-api.herokuapp.com/api/darkjoke?apikey=404Api`, {method: 'get'})
+				buff = buff.result
 				buttons = [{buttonId: `!infoig`,buttonText:{displayText: ` Follow @xkurokochi_`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
@@ -1790,7 +1790,8 @@ break
 case 'meme':
 case 'memek':
 
- buff = await getBuffer ('https://leyscoders-api.herokuapp.com/api/memeindo?apikey=IkyOgiwara')
+ buff = await getBuffer ('https://h4ck3rs404-api.herokuapp.com/api/random/meme?apikey=404Api')
+buff = buff.url
 
 buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `NEXT`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
