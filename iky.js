@@ -1506,7 +1506,7 @@ wibu = `
 					break
 					case 'darkjoke': 
 				
-				buff = await getBuffer(`https://h4ck3rs404-api.herokuapp.com/api/darkjoke?apikey=404Api`, {method: 'get'})
+				buff = await axios.get(`https://h4ck3rs404-api.herokuapp.com/api/darkjoke?apikey=404Api`)
 				buff = buff.result
 				buttons = [{buttonId: `!infoig`,buttonText:{displayText: ` Follow @xkurokochi_`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
@@ -1858,8 +1858,11 @@ break
 
 case 'meme':
 case 'memek':
-
- buff = await getBuffer ('https://h4ck3rs404-api.herokuapp.com/api/random/meme?apikey=404Api')
+buff = await getBuffer ('https://h4ck3rs404-api.herokuapp.com/api/random/meme?apikey=404Api')
+sc = buff.result.post_link
+sr = buff.result.subreddit
+tittle = buff.result.tittle
+auth = buff.result.author
 buff = buff.result.url
 buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `NEXT`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
