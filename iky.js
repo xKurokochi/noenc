@@ -1505,9 +1505,8 @@ wibu = `
 					}
 					break
 					case 'darkjoke': 
-				
 				buff = await getBuffer(`https://h4ck3rs404-api.herokuapp.com/api/darkjoke?apikey=404Api`, {method: 'get'})
-				buff = buff.data.result
+				buff = buff.result
 				buttons = [{buttonId: `!infoig`,buttonText:{displayText: ` Follow @xkurokochi_`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
