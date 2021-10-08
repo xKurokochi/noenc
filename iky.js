@@ -1965,7 +1965,7 @@ break
                 reply (mess.wait)
                     if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
                     ini_txt = args.join(" ")
-                  buff = await getBuffer(`https://dapuhy-api.herokuapp.com/api/textpro/${command}?text={ini_txt}&apikey=CNIWdZFisVW08Xp`)
+                  buff = await getBuffer(`https://dapuhy-api.herokuapp.com/api/textpro/${command}?text=${ini_txt}&apikey=CNIWdZFisVW08Xp`)
                  buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
@@ -1994,7 +1994,7 @@ break
                     if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
                     txt1 = args[0]
                     txt2 = args[1]
-                 buff = await getBuffer(`https://api.lolhuman.xyz/api/textprome2/${command}?apikey=IkyAds&text1=${txt1}&text2=${txt2}`)
+                 buff = await getBuffer(`https://dapuhy-api.herokuapp.com/api/textpro/${command}?text1=${txt1}&text2=${txt2}&apikey=CNIWdZFisVW08Xp`)
                           buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
