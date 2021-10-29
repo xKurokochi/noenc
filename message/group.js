@@ -39,7 +39,7 @@ module.exports = welcome = async (ikyy, anu) => {
             	num = anu.participants[0]
                 let v = ikyy.contacts[num] || { notify: num.replace(/@.+/, '') }
                 anu_user = v.vname || v.notify || num.split('@')[0]
-            buff = await getBuffer(`https://api.lolhuman.xyz/api/base/welcome?apikey=${setting.lolkey}&img1=${pp_user}&img2=${pp_grup}&background=https://telegra.ph/file/559d40a73f54e257b0b2e.jpg&username=${encodeURI(anu_user)}&member=${memeg}&groupname= ${encodeURI(mdata.subject)}`)
+            buff = await getBuffer(`https://api.dapuhy.ga/api/canvas/welcome3?name=${encodeURI(anu_user)}&gcname=${encodeURI(mdata.subject)}&member=${memeg}&pp=${pp_user}&bg=https://cdn.wallpapersafari.com/35/27/IdhB5D.jpg&apikey=CNIWdZFisVW08Xp`)
         buttons = [
 
           { buttonId: `!selamatdatang`, buttonText: { displayText: "Welcome👋" }, type: 1 },
@@ -60,7 +60,7 @@ module.exports = welcome = async (ikyy, anu) => {
 
           contentText: `${teks}`,
 
-          footerText: "by LeonzGanz",
+          footerText: "RengeBot",
 
           imageMessage: imageMsg,
 
@@ -98,7 +98,7 @@ module.exports = welcome = async (ikyy, anu) => {
 
         out = `${leave}`;
 
-        buff = await getBuffer(`https://api.lolhuman.xyz/api/base/welcome?apikey=${setting.lolkey}&img1=${pp_user}&img2=${pp_grup}&background=https://telegra.ph/file/559d40a73f54e257b0b2e.jpg&username=${encodeURI(anu_user)}&member=${memeg}&groupname= ${encodeURI(mdata.subject)}`)
+        buff = await getBuffer(`https://api.dapuhy.ga/api/canvas/goodbye?name=${encodeURI(anu_user)}&gcname=${encodeURI(mdata.subject)}&ppgc=${pp_grup}&member=${memeg}&pp=${pp_user}&bg=https://cdn.wallpapersafari.com/35/27/IdhB5D.jpg&apikey=CNIWdZFisVW08Xp`)
             
         buttons = [
 
@@ -118,7 +118,7 @@ module.exports = welcome = async (ikyy, anu) => {
 
           contentText: `${out}`,
 
-          footerText: "by LeonzGanz",
+          footerText: "RengeBot",
 
           imageMessage: imageMsg,
 
