@@ -39,7 +39,7 @@ module.exports = welcome = async (ikyy, anu) => {
             	num = anu.participants[0]
                 let v = ikyy.contacts[num] || { notify: num.replace(/@.+/, '') }
                 anu_user = v.vname || v.notify || num.split('@')[0]
-            buff = await getBuffer(`https://api.dapuhy.ga/api/canvas/welcome3?name=${encodeURI(anu_user)}&gcname=${encodeURI(mdata.subject)}&member=${memeg}&pp=${pp_user}&bg=https://cdn.wallpapersafari.com/35/27/IdhB5D.jpg&apikey=CNIWdZFisVW08Xp`)
+            buff = await getBuffer(`https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/201265559/original/13e4adbf4d349f712b988e2816bcbfb739a1542d/create-graphic-designs-for-your-discord.png`)
         buttons = [
 
           { buttonId: `!selamatdatang`, buttonText: { displayText: "Welcome👋" }, type: 1 },
@@ -98,7 +98,7 @@ module.exports = welcome = async (ikyy, anu) => {
 
         out = `${leave}`;
 
-        buff = await getBuffer(`https://api.dapuhy.ga/api/canvas/goodbye?name=${encodeURI(anu_user)}&gcname=${encodeURI(mdata.subject)}&ppgc=${pp_grup}&member=${memeg}&pp=${pp_user}&bg=https://cdn.wallpapersafari.com/35/27/IdhB5D.jpg&apikey=CNIWdZFisVW08Xp`)
+        buff = await getBuffer(`https://i.pinimg.com/originals/76/06/6b/76066b2aee293cbb456b32ac21ee2fac.jpg`)
             
         buttons = [
 
