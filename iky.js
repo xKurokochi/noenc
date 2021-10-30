@@ -1327,7 +1327,6 @@ wibu = `
 ┃▹ ${prefix}Glitch text1 text2
 ┃▹ ${prefix}Glitch2 text1 text2
 ┃▹ ${prefix}Stone text1 text2
-┃▹ ${prefix}Pornhub text1 text2
 ┃▹ ${prefix}AvengersLogo text1 text2
 ┃▹ ${prefix}CoolGraffiti text1 text2
 ┃▹ ${prefix}MarvelStudio text1 text2
