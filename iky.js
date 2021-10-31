@@ -4461,7 +4461,7 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
        case 'tiktoknowm':
               if (!q) return reply('Linknya?')
               if (!q.includes('tiktok')) return reply(mess.error.Iv)
-              data = await fetchJson(`api.dapuhy.ga/api/socialmedia/tiktokder?url=${q}&apikey=CNIWdZFisVW08Xp`)
+              data = await fetchJson(`http://api.dapuhy.ga/api/socialmedia/tiktokder?url=${q}&apikey=CNIWdZFisVW08Xp`)
               result = `⚜️ *Nickname*: ${data.user.user_nickname}\n❤️ *Username*: ${data.user.username}🎞️ *Views*: ${data.result.views}\n?? *Desc*: ${data.result.desc}`
               buttons = [{buttonId: `${prefix}tt1 ${q}`,buttonText:{displayText: `▶️ Video`},type:1},{buttonId:`${prefix}ttaudio ${q}`,buttonText:{displayText:'🎵 Audio'},type:1}]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(data.user.pp))
