@@ -4461,10 +4461,10 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
        case 'tiktoknowm':
               if (!q) return reply('Linknya?')
               if (!q.includes('tiktok')) return reply(mess.error.Iv)
-              data = await fetchJson(`https://api.lolhuman.xyz/api/tiktok?apikey=IkyAds&url=${q}`)
-              result = `⚜️ *Nickname*: ${data.result.author.nickname}\n❤️ *Like*: ${data.result.statistic.diggCount}\n💬 *Komentar*: ${data.result.statistic.commentCount}\n🔁 *Share*: ${data.result.statistic.shareCount}\n🎞️ *Views*: ${data.result.statistic.playCount}\n?? *Desc*: ${data.result.title}`
+              data = await fetchJson(`api.dapuhy.ga/api/socialmedia/tiktokder?url=${q}&apikey=CNIWdZFisVW08Xp`)
+              result = `⚜️ *Nickname*: ${data.user.user_nickname}\n❤️ *Username*: ${data.user.username}🎞️ *Views*: ${data.result.views}\n?? *Desc*: ${data.result.desc}`
               buttons = [{buttonId: `${prefix}tt1 ${q}`,buttonText:{displayText: `▶️ Video`},type:1},{buttonId:`${prefix}ttaudio ${q}`,buttonText:{displayText:'🎵 Audio'},type:1}]
-              fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(data.result.thumbnail))
+              fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(data.user.pp))
               imageMsg = ( await ikyy.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
               buttonsMessage = {footerText:'Pilih satu format di bawah ini', imageMessage: imageMsg,
               contentText:`${result}`,buttons,headerType:4}
@@ -4478,7 +4478,7 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
              if (!q.includes('tiktok')) return reply(mess.error.Iv)
              reply(mess.wait)
              anu = await TiktokDownloader(`${q}`)
-            .then((data) => { sendMediaURL(from, data.result.nowatermark) })
+            .then((data) => { sendMediaURL(from, data.result.nowm) })
             .catch((err) => { reply(String(err)) })
              break
 
@@ -4526,11 +4526,11 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
       case 'ttaudio': 
       case 'tiktokmusic': 
       case 'tiktokaudio':
-              reply(mess.wait)
-             if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
-             ini_link = args[0]
-             get_audio = await getBuffer(`https://api.lolhuman.xyz/api/tiktokmusic?apikey=IkyAds&url=${ini_link}`)
-             ikyy.sendMessage(from, get_audio, audio, { mimetype: Mimetype.mp4Audio, quoted: freply })
+              reply('Tiktok Audio Belum Tersedia!')
+          ///   if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
+          /// ini_link = args[0]
+          /// get_audio = await getBuffer(`https://api.lolhuman.xyz/api/tiktokmusic?apikey=IkyAds&url=${ini_link}`)
+          /// ikyy.sendMessage(from, get_audio, audio, { mimetype: Mimetype.mp4Audio, quoted: freply })
              break
       case 'fbdl':
       case 'fb':
