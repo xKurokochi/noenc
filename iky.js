@@ -4450,7 +4450,7 @@ reply(mess.wait)
 anu = await TiktokDownloader(`${q}`)
 kyyyy ='hi.mp4'
 kntl = 'hasil.mp4'
-fs.writeFileSync(input,await getBuffer(data.result.watermark))
+fs.writeFileSync(input,await getBuffer(data.download.with_watermark))
 exec(`ffmpeg -i ${kyyyy} -b:a 192K -vn  ${kntl}`,(err,res)=> {
 if (err) return reply(`${err}`)
 ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
@@ -4461,8 +4461,8 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
        case 'tiktoknowm':
               if (!q) return reply('Linknya?')
               if (!q.includes('tiktok')) return reply(mess.error.Iv)
-              data = await fetchJson(`http://api.dapuhy.ga/api/socialmedia/tiktokder?url=${q}&apikey=CNIWdZFisVW08Xp`)
-              result = `⚜️ *Nickname*: ${data.user.user_nickname}\n❤️ *Username*: ${data.user.username}🎞️ *Views*: ${data.result.views}\n?? *Desc*: ${data.result.desc}`
+              data = await fetchJson(`https://api.dapuhy.ga/api/socialmedia/nguteksnaptik?url=${q}&apikey=CNIWdZFisVW08Xp`)
+              result = `� *Title* : ${data.title}\n⚜️ *Nickname*: ${data.author.nickname}\n❤️ *Username*: ${data.author.unique_id}`
               buttons = [{buttonId: `${prefix}tt1 ${q}`,buttonText:{displayText: `▶️ Video`},type:1},{buttonId:`${prefix}ttaudio ${q}`,buttonText:{displayText:'🎵 Audio'},type:1}]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(data.user.pp))
               imageMsg = ( await ikyy.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
@@ -4478,7 +4478,7 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
              if (!q.includes('tiktok')) return reply(mess.error.Iv)
              reply(mess.wait)
              anu = await TiktokDownloader(`${q}`)
-            .then((data) => { sendMediaURL(from, data.result.nowm) })
+            .then((data) => { sendMediaURL(from, data.download.no_watermark) })
             .catch((err) => { reply(String(err)) })
              break
 
@@ -4526,11 +4526,13 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
       case 'ttaudio': 
       case 'tiktokmusic': 
       case 'tiktokaudio':
-              reply('Tiktok Audio Belum Tersedia!')
-          ///   if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
-          /// ini_link = args[0]
-          /// get_audio = await getBuffer(`https://api.lolhuman.xyz/api/tiktokmusic?apikey=IkyAds&url=${ini_link}`)
-          /// ikyy.sendMessage(from, get_audio, audio, { mimetype: Mimetype.mp4Audio, quoted: freply })
+              reply('```Loading...```')
+             if (!q) return reply('Linknya?')
+             if (!q.includes('tiktok')) return reply(mess.error.Iv)
+             reply(mess.wait)
+             anu = await TiktokDownloader(`${q}`)
+            .then((data) => { sendMediaURL(from, data.download.music) })
+            .catch((err) => { reply(String(err)) })
              break
       case 'fbdl':
       case 'fb':
