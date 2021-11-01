@@ -4464,7 +4464,7 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
               data = await fetchJson(`https://api.dapuhy.ga/api/socialmedia/nguteksnaptik?url=${q}&apikey=CNIWdZFisVW08Xp`)
               result = `� *Title* : ${data.title}\n⚜️ *Nickname*: ${data.author.nickname}\n❤️ *Username*: ${data.author.unique_id}`
               buttons = [{buttonId: `${prefix}tt1 ${q}`,buttonText:{displayText: `▶️ Video`},type:1},{buttonId:`${prefix}ttaudio ${q}`,buttonText:{displayText:'🎵 Audio'},type:1}]
-              fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(data.user.pp))
+              fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(data.author.avatar))
               imageMsg = ( await ikyy.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
               buttonsMessage = {footerText:'Pilih satu format di bawah ini', imageMessage: imageMsg,
               contentText:`${result}`,buttons,headerType:4}
