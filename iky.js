@@ -4478,7 +4478,9 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
              if (!q.includes('tiktok')) return reply(mess.error.Iv)
              reply(mess.wait)
              anu = await TiktokDownloader(`${q}`)
-            .then((data) => { sendFileFromUrl(from, data.download.no_watermark) })
+            .then((data) => { 
+		     data = data.download
+		     sendFileFromUrl(from, data.no_watermark) })
             .catch((err) => { reply(String(err)) })
              break
 
@@ -4531,7 +4533,9 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
              if (!q.includes('tiktok')) return reply(mess.error.Iv)
              reply(mess.wait)
              anu = await TiktokDownloader(`${q}`)
-            .then((data) => { sendFileFromUrl(from, data.download.music) })
+            .then((data) => { 
+		     data = data.download
+		     sendFileFromUrl(from, data.music) })
             .catch((err) => { reply(String(err)) })
              break
       case 'fbdl':
