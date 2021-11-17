@@ -3719,7 +3719,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               break
 	case 'buildgi': 
                if (args.length < 1) return reply(`Masukkan nama characternya contoh #genshin mona`)
-              buff = await getBuffer(`https://upanh.nhatkythuthuat.com/images/2021/09/01/${args[0]}.jpg`)
+              buff = await getBuffer(`https://raw.githubusercontent.com/xKurokochi/noenc/main/image/buildgi/${args[0]}.jpeg`)
                  buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
