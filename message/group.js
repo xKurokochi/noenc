@@ -58,7 +58,7 @@ module.exports = welcome = async (ikyy, anu) => {
 
         buttonsMessage = {
 
-          contentText: `${teks}`,
+          contentText: `\`\`\`New Member\`\`\` \n \`\`\`Nama :\`\`\` \n \`\`\`Askot : \`\`\` \n \`\`\`Umur :\`\`\` \n \`\`\`Status :\`\`\` \n\n - [   ] -`,
 
           footerText: "RengeBot",
 
