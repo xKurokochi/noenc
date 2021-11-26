@@ -1179,8 +1179,11 @@ case 'sendbug':
               
                 
 
-                    ikyy.sendMessage(from, { contentText: `${menu}`, footerText: 'Renge Bot', buttons: [{ buttonId: `!command`, buttonText: { displayText: 'LIST MESSAGE' }, type: 1 },{ buttonId: `!owner`, buttonText: { displayText: '👥 OWNER' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: ikyads, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+                    ikyy.sendMessage(from, { contentText: `${menu}`, footerText: 'Renge Bot', buttons: [{ buttonId: `!command`, buttonText: { displayText: 'LIST MESSAGE' }, type: 1 },{ buttonId: `!owner`, buttonText: { displayText: '👥 OWNER' }, type: 1 },{ buttonId: `!linkgc`, buttonText: { displayText: '🗣GRUP CHAT' }, type: 1 }], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: ikyads, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
               break
+	case 'linkgc':
+		reply('〈 _Khusus Genshin Impact_ 〉\n» https://chat.whatsapp.com/GKcB9mnEGXm2XdcH8pHTrL')
+		break
 case 'f':
 case 'lock':
  ikymemek = {
@@ -2300,7 +2303,7 @@ case "mode":
               ikyy.relayWAMessage(prep)
         break
 
-               case 'groupmenu':
+        case 'groupmenu':
         case 'menugroup':
               groups = ikyy.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = ikyy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
@@ -2351,7 +2354,7 @@ case "mode":
 `
 
                buttons =  [
-    {buttonId: `${prefix}rules`, buttonText: {displayText: 'S&K'}, type: 1},
+    {buttonId: `${prefix}`, buttonText: {displayText: 'S&K'}, type: 1},{ buttonId: `!linkgc`, buttonText: { displayText: '🗣GRUP CHAT' }, type: 1 },
 ]
                imageMsg = (await ikyy.prepareMessageMedia(fs.readFileSync(`./media/Menu.jpg`), 'imageMessage', { thumbnail:Bfake, contextInfo:{forwardingScore: 989, isForwarded: true }})).imageMessage
 
@@ -3720,7 +3723,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 	case 'buildgi': 
                if (args.length < 1) return reply(`Masukkan nama characternya contoh #genshin mona`)
               buff = await getBuffer(`https://raw.githubusercontent.com/xKurokochi/noenc/main/image/buildgi/${args[0]}.jpeg`)
-                 buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
+                 buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1},{ buttonId: `!linkgc`, buttonText: { displayText: '🗣GRUP CHAT' }, type: 1 }]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`Follow @xkurokochi_`,buttons,headerType:4}
@@ -5938,7 +5941,7 @@ teks = `\`\`\`BOT STATISTICS\`\`\`
               } catch {
               var pic = 'https://i.ibb.co/Tq7d7TZ/age-hananta-495-photo.png'
 }
-              let ingfo = `*G R O U P I N F O*\n\n*Name :* ${groupName}\n*ID Grup :* ${from}\n*Dibuat :* ${moment(`${groupMetadata.creation}` * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\n*Owner Grup :* @${groupMetadata.owner.split('@')[0]}\n*Jumlah Admin :* ${groupAdmins.length}\n*Jumlah Peserta :* ${groupMembers.length}\n*Welcome :* ${isWelkom ? 'Aktif' : 'Mati'}\n*AntiLink :* ${isAntiLink ? 'Aktif' : 'Mati'}\n*Desc :* \n${groupMetadata.desc}`
+              let ingfo = `*G R O U P I N F O*\n\n*Name :* ${groupName}\n*ID Grup :* ${from}\n*Dibuat :* ${moment(`${groupMetadata.creation}` * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\n*Owner Grup :* @${groupMetadata.owner.split('@')[0]}\n*Jumlah Admin :* ${groupAdmins.length}\n*Jumlah Peserta :* ${groupMembers.length}\n*e
               ikyy.sendMessage(from, await getBuffer(pic), image, {quoted: freply, caption: ingfo, contextInfo: {"mentionedJid": [groupMetadata.owner.replace('@c.us', '@s.whatsapp.net')]}})
               break
        case 'tagall':
@@ -6356,6 +6359,22 @@ case 'caripesan':  //by ANU TEAM
                reply('Enable untuk mengaktifkan, disable untuk menonaktifkan')
 }
                break
+	case 'owelcome':
+welcom = true;
+if (!isOwner && !itsMe) return
+if (args.length < 1) return reply('Select on or off')
+if (args[0] === "on") {
+if(welcom)return reply('It has been activated before!')
+welcom = true
+reply(`Succesfully activated welcome`)
+} else if (args[0] === "off") {
+if(!welcom)return reply('It has been deactivated before!')
+welcom = false
+reply(`Successfully turned off welcome`)
+} else {
+reply(`Select on or off`)
+}
+break 
         case 'mute':
                if (!isGroup) return reply(mess.only.group)
                if (!isGroupAdmins) return reply(mess.only.admin)
