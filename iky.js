@@ -1968,7 +1968,7 @@ break
                 reply (mess.wait)
                     if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
                     ini_txt = args.join(" ")
-                  buff = await getBuffer(`https://api.dapuhy.ga/api/textpro/${command}?text=${ini_txt}&apikey=CNIWdZFisVW08Xp`)
+                  buff = await getBuffer(`https://api.dapuhy.ga/api/textpro/${command}?text=${ini_txt}&apikey=HRHdL99iyl`)
                  buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
@@ -1997,7 +1997,7 @@ break
                     if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
                     txt1 = args[0]
                     txt2 = args[1]
-                 buff = await getBuffer(`https://api.dapuhy.ga/api/textpro/${command}?text1=${txt1}&text2=${txt2}&apikey=CNIWdZFisVW08Xp`)
+                 buff = await getBuffer(`https://api.dapuhy.ga/api/textpro/${command}?text1=${txt1}&text2=${txt2}&apikey=HRHdL99iyl`)
                           buttons = [{buttonId: `!menu`,buttonText:{displayText: `BACK MENU`},type:1}]
               imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
@@ -3633,7 +3633,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'tebakanime':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakanime.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
-              get_result = await fetchJson(`https://api.dapuhy.ga/api/anime/tebakwaifu?apikey=CNIWdZFisVW08Xp`)
+              get_result = await fetchJson(`https://api.dapuhy.ga/api/anime/tebakwaifu?apikey=HRHdL99iyl`)
               ini_image = get_result.result.image
               jawaban = get_result.result.name
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
@@ -3929,7 +3929,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'asahotak':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (asahotak.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://api.dapuhy.ga/api/fun/asahotak?apikey=CNIWdZFisVW08Xp`)
+              get_result = await fetchJson(`https://api.dapuhy.ga/api/fun/asahotak?apikey=HRHdL99iyl`)
               jawaban = get_result.jawaban
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               pertanyaan = get_result.pertanyaan
@@ -3949,7 +3949,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'caklontong':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (caklontong.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://api.dapuhy.ga/api/fun/caklontong?apikey=CNIWdZFisVW08Xp`)
+              get_result = await fetchJson(`https://api.dapuhy.ga/api/fun/caklontong?apikey=HRHdL99iyl`)
               jawaban = get_result.jawaban
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
               pertanyaan = get_result.soal
@@ -4464,7 +4464,7 @@ ikyy.sendMessage(from,{url:'./'+kyyyy},audio,{mimetype:'audio/mpeg'})
        case 'tiktoknowm':
               if (!q) return reply('Linknya?')
               if (!q.includes('tiktok')) return reply(mess.error.Iv)
-              data = await fetchJson(`https://api.dapuhy.ga/api/socialmedia/nguteksnaptik?url=${q}&apikey=CNIWdZFisVW08Xp`)
+              data = await fetchJson(`https://api.dapuhy.ga/api/socialmedia/nguteksnaptik?url=${q}&apikey=HRHdL99iyl`)
               result = `� *Title* : ${data.title}\n⚜️ *Nickname*: ${data.author.nickname}\n❤️ *Username*: ${data.author.unique_id}`
               buttons = [{buttonId: `${prefix}tt1 ${q}`,buttonText:{displayText: `▶️ Video`},type:1},{buttonId:`${prefix}ttaudio ${q}`,buttonText:{displayText:'🎵 Audio'},type:1}]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(data.author.avatar))
@@ -4970,7 +4970,7 @@ break
 		   if (args.length == 0) return reply(`Example: ${prefix + command} loli`)
                     query = args.join(" ")
                  reply (mess.wait)
-                    ini_url = await fetchJson(`https://api.dapuhy.ga/api/search/pinterest-image?query=${query}&apikey=CNIWdZFisVW08Xp`)
+                    ini_url = await fetchJson(`https://api.dapuhy.ga/api/search/pinterest-image?query=${query}&apikey=HRHdL99iyl`)
                     ini_url = ini_url.data
                     buff = await getBuffer(ini_url)
                     buttons = [{buttonId: `${prefix + command} ${query}`,buttonText:{displayText: `➡️Next`},type:1}]
